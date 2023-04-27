@@ -98,7 +98,7 @@ const aboutRightObserver = new IntersectionObserver(
 );
 aboutRightObserver.observe(about);
 
-// intersection for overvieservicesw h2
+// intersection for services h2
 const services = document.querySelector("#services");
 const servicesH2 = document.querySelector("#services-heading");
 const servicesP = document.querySelector("#services-paragraph");
@@ -153,10 +153,39 @@ document.querySelectorAll("#services-links a").forEach((el) => {
     serviceLinksObserver.observe(el);
 });
 
+// intersection for services h2
+const members = document.querySelector("#members");
+const membersH2 = document.querySelector("#members-heading");
+const membersP = document.querySelector("#members-paragraph");
+
+const membersCallback = function (entries, observer) {
+    const [entry] = entries;
+
+    if (entry.isIntersecting) {
+        membersH2.classList.remove("translate-y-5");
+        membersH2.classList.remove("opacity-0");
+        membersP.classList.remove("translate-y-5");
+        membersP.classList.remove("opacity-0");
+    }
+};
+
+const membersOptions = {
+    root: null,
+    // threshold: [0, 0.5],
+    threshold: 0.2,
+};
+
+const membersObserver = new IntersectionObserver(
+    membersCallback,
+    membersOptions
+);
+membersObserver.observe(members);
+
 // intersection for booking h2
 const booking = document.querySelector("#booking");
 const bookingH2 = document.querySelector("#booking-heading");
 const bookingP = document.querySelector("#booking-paragraph");
+const form = document.getElementById("booking-form");
 
 const bookingCallback = function (entries, observer) {
     const [entry] = entries;
@@ -166,6 +195,8 @@ const bookingCallback = function (entries, observer) {
         bookingH2.classList.remove("opacity-0");
         bookingP.classList.remove("translate-y-5");
         bookingP.classList.remove("opacity-0");
+        form.classList.remove("translate-y-5");
+        form.classList.remove("opacity-0");
     }
 };
 
