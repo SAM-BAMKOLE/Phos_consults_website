@@ -6,6 +6,8 @@ module.exports = {
             backgroundImage: {
                 "hero-overlay":
                     "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))",
+                testimonial:
+                    " linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url('/images/testimonial-background.jpg')",
             },
             fontFamily: {
                 raleway: [' "Raleway", sans-serif; '],

@@ -97,3 +97,86 @@ const aboutRightObserver = new IntersectionObserver(
     aboutRightOptions
 );
 aboutRightObserver.observe(about);
+
+// intersection for overvieservicesw h2
+const services = document.querySelector("#services");
+const servicesH2 = document.querySelector("#services-heading");
+const servicesP = document.querySelector("#services-paragraph");
+
+const servicesCallback = function (entries, observer) {
+    const [entry] = entries;
+
+    if (entry.isIntersecting) {
+        servicesH2.classList.remove("translate-y-5");
+        servicesH2.classList.remove("opacity-0");
+        servicesP.classList.remove("translate-y-5");
+        servicesP.classList.remove("opacity-0");
+    }
+};
+
+const servicesOptions = {
+    root: null,
+    // threshold: [0, 0.5],
+    threshold: 0.2,
+};
+
+const servicesObserver = new IntersectionObserver(
+    servicesCallback,
+    servicesOptions
+);
+servicesObserver.observe(services);
+
+// intersection for services links
+const serviceLinks = document.querySelectorAll("#services-links a");
+
+const serviceLinksCallback = function (entries, observer) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove("translate-y-10");
+            entry.target.classList.remove("opacity-0");
+        }
+    });
+};
+
+const serviceLinksOptions = {
+    root: null,
+    threshold: 0.6,
+    rootMargin: "0px",
+};
+
+const serviceLinksObserver = new IntersectionObserver(
+    serviceLinksCallback,
+    serviceLinksOptions
+);
+
+document.querySelectorAll("#services-links a").forEach((el) => {
+    serviceLinksObserver.observe(el);
+});
+
+// intersection for booking h2
+const booking = document.querySelector("#booking");
+const bookingH2 = document.querySelector("#booking-heading");
+const bookingP = document.querySelector("#booking-paragraph");
+
+const bookingCallback = function (entries, observer) {
+    const [entry] = entries;
+
+    if (entry.isIntersecting) {
+        bookingH2.classList.remove("translate-y-5");
+        bookingH2.classList.remove("opacity-0");
+        bookingP.classList.remove("translate-y-5");
+        bookingP.classList.remove("opacity-0");
+    }
+};
+
+const bookingOptions = {
+    root: null,
+    // threshold: [0, 0.5],
+    threshold: 0.4,
+};
+
+const bookingObserver = new IntersectionObserver(
+    bookingCallback,
+    bookingOptions
+);
+bookingObserver.observe(booking);
