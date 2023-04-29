@@ -23,13 +23,15 @@
         ></script>
     </head>
     <body>
-        <header
-            class="relative w-full h-[90vh] md:h-screen bg-gray-300 clip-path-hero overflow-hidden"
-        >
+        <div class="max-w-7xl">
             <!-- navbar for desktop screen -->
-            <nav class="hidden md:block">
+
+            <nav
+                class="hidden md:block fixed top-0 left-0 z-[1000] w-full opacity-0 transition duration-300 bg-black"
+                id="nav-desktop"
+            >
                 <div
-                    class="z-10 border-b border-gray-300 bg-transparent text-white"
+                    class="z-10 border-b border-gray-300 text-white navbar-original"
                 >
                     <div
                         class="mx-auto max-w-7xl py-2 flex items-center justify-between"
@@ -72,11 +74,11 @@
                     <div
                         class="mx-auto max-w-7xl py-2 gap-20 flex items-center"
                     >
-                        <span class="bg-white">
+                        <span class="">
                             <img
-                                src="./images/phos consults LOGO.png"
+                                src="./images/phos consults LOGO2.png"
                                 alt="Phos consults logo"
-                                class="w-[50px]"
+                                class="h-[20px]"
                             />
                         </span>
                         <ul class="flex items-center gap-0 md:gap-3">
@@ -107,9 +109,13 @@
                     </div>
                 </div>
             </nav>
+
             <!-- navbar for desktop screen -->
             <!-- navbar for mobile screen -->
-            <nav class="block md:hidden">
+            <nav
+                class="block md:hidden fixed top-0 left-0 z-[1000] w-full opacity-0 transition duration-300"
+                id="nav-mobile"
+            >
                 <nav
                     class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
                 >
@@ -121,9 +127,9 @@
                             class="flex items-center"
                         >
                             <img
-                                src="./images/phos consults LOGO.png"
+                                src="./images/phos consults LOGO2.png"
                                 alt="Phos consults logo"
-                                class="w-[30px]"
+                                class="h-[30px]"
                             />
                         </a>
                         <div class="flex md:order-2 space-x-2">
@@ -206,20 +212,146 @@
                 </nav>
             </nav>
             <!-- navbar for mobile screen -->
-            <div
-                class="w-full h-full overflow-hidden absolute top-0 left-0 -z-50"
-            >
-                <span
-                    class="w-full h-full bg-gradient-to-tr from-black to-black"
+            <!-- header content section -->
+        </div>
+        <header
+            class="relative w-full h-[90vh] md:h-screen bg-gray-300 clip-path-hero overflow-hidden"
+            id="header"
+        >
+            <div class="slider-class bg-slider-one displayed slider">
+                <div
+                    class="w-full h-full current-content content transition duration-500 ease-in"
                 >
-                    <img
-                        src="./images/hero-1.jpg"
-                        alt="hero slider 1"
-                        class="block h-full w-full object-cover bg-hero-overlay mix-blend-overlay"
-                    />
-                </span>
+                    <div
+                        class="px-5 md:px-0 absolute top-[25%] md:top-40 md:left-10 w-full md:w-1/2"
+                    >
+                        <h1
+                            class="text-white font-semibold md:font-bold text-5xl md:text-[75px] leading-[1] md:leading-[1.05]"
+                        >
+                            Your success <br />
+                            Our business
+                        </h1>
+                        <p class="w-full text-gray-100 text-lg font-medium">
+                            To succeed in business today, you need to be
+                            flexible and have a good planning and organizational
+                            skills.
+                        </p>
+                        <div class="mt-5 flex space-x-7 items-center">
+                            <a
+                                href="#"
+                                class="py-3 px-6 bg-gray-950 border border-gray-50 rounded-3xl text-gray-50 text-lg font-semibold hover:shadow-xl"
+                                >Our services</a
+                            >
+                            <a
+                                href="#"
+                                class="py-3 px-6 bg-gray-100 rounded-3xl text-grey-950 text-lg font-semibold hover:shadow-xl"
+                                >More about us</a
+                            >
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="w-full h-full overflow-hidden"></div>
+            <div class="slider-class bg-slider-two slider">
+                <div
+                    class="w-full h-full no-content content transition duration-500 ease-in"
+                >
+                    <div
+                        class="px-5 md:px-0 absolute top-[25%] md:top-40 md:left-10 w-full md:w-1/2"
+                    >
+                        <h1
+                            class="text-white font-semibold md:font-bold text-5xl md:text-[75px] leading-[1] md:leading-[1.05]"
+                        >
+                            Your success <br />
+                            Our business two
+                        </h1>
+                        <p class="w-full text-gray-100 text-lg font-medium">
+                            To succeed in business today, you need to be
+                            flexible and have a good planning and organizational
+                            skills.
+                        </p>
+                        <div class="mt-5 flex space-x-7 items-center">
+                            <a
+                                href="#"
+                                class="py-3 px-6 bg-gray-950 border border-gray-50 rounded-3xl text-gray-50 text-lg font-semibold hover:shadow-xl"
+                                >Our services</a
+                            >
+                            <a
+                                href="#"
+                                class="py-3 px-6 bg-gray-100 rounded-3xl text-grey-950 text-lg font-semibold hover:shadow-xl"
+                                >More about us</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-class bg-slider-three slider">
+                <div
+                    class="w-full h-full no-content content transition duration-500 ease-in"
+                >
+                    <div
+                        class="px-5 md:px-0 absolute top-[25%] md:top-40 md:left-10 w-full md:w-1/2"
+                    >
+                        <h1
+                            class="text-white font-semibold md:font-bold text-5xl md:text-[75px] leading-[1] md:leading-[1.05]"
+                        >
+                            Your success <br />
+                            Our business three
+                        </h1>
+                        <p class="w-full text-gray-100 text-lg font-medium">
+                            To succeed in business today, you need to be
+                            flexible and have a good planning and organizational
+                            skills.
+                        </p>
+                        <div class="mt-5 flex space-x-7 items-center">
+                            <a
+                                href="#"
+                                class="py-3 px-6 bg-gray-950 border border-gray-50 rounded-3xl text-gray-50 text-lg font-semibold hover:shadow-xl"
+                                >Our services</a
+                            >
+                            <a
+                                href="#"
+                                class="py-3 px-6 bg-gray-100 rounded-3xl text-grey-950 text-lg font-semibold hover:shadow-xl"
+                                >More about us</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-class bg-slider-four slider">
+                <div
+                    class="w-full h-full no-content content transition duration-500 ease-in"
+                >
+                    <div
+                        class="px-5 md:px-0 absolute top-[25%] md:top-40 md:left-10 w-full md:w-1/2"
+                    >
+                        <h1
+                            class="text-white font-semibold md:font-bold text-5xl md:text-[75px] leading-[1] md:leading-[1.05]"
+                        >
+                            Your success <br />
+                            Our business four
+                        </h1>
+                        <p class="w-full text-gray-100 text-lg font-medium">
+                            To succeed in business today, you need to be
+                            flexible and have a good planning and organizational
+                            skills.
+                        </p>
+                        <div class="mt-5 flex space-x-7 items-center">
+                            <a
+                                href="#"
+                                class="py-3 px-6 bg-gray-950 border border-gray-50 rounded-3xl text-gray-50 text-lg font-semibold hover:shadow-xl"
+                                >Our services</a
+                            >
+                            <a
+                                href="#"
+                                class="py-3 px-6 bg-gray-100 rounded-3xl text-grey-950 text-lg font-semibold hover:shadow-xl"
+                                >More about us</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- header content section ends -->
         </header>
         <!-- overview section -->
         <section class="bg-white mx-auto py-10 md:py-20" id="overview">
@@ -555,9 +687,9 @@
         </section>
         <!-- quote section ends -->
 
-        <!-- menbers section starts -->
-        <section class="bg-white mx-auto py-10 md:py-20" id="members">
-            <div class="mx-auto max-w-7xl px-3 md:px-0">
+        <!-- members section starts -->
+        <section class="bg-white py-10 md:py-20 w-full" id="members">
+            <div class="mx-auto w-full max-w-3xl px-3 md:px-0">
                 <h2
                     class="text-center text-black font-semibold text-lg md:text-2xl mb-2 md:max-w-2xl mx-auto translate-y-5 opacity-0 transition duration-[0.8s] delay-150"
                     id="members-heading"
@@ -573,20 +705,33 @@
                         different fields.
                     </p>
                 </div>
-                <div class="flex gap-3">
-                    <div class="max-w-sm">
-                        <span class="h-10 w-full rounded-md overflow-hidden">
-                            <img
-                                src="./images/97.jpg"
-                                alt="advisor's image"
-                                class="w-full object-cover"
-                            />
-                        </span>
-                    </div>
+            </div>
+        </section>
+        <!-- members section ends -->
+        <!-- testimonial section  -->
+        <section class="bg-phosBlue mx-auto py-10 md:py-20" id="testimonial">
+            <div class="mx-auto max-w-7xl px-3 md:px-0">
+                <h2
+                    class="text-center text-white font-semibold text-lg md:text-2xl mb-2 md:max-w-2xl mx-auto translate-y-5 opacity-0 transition duration-[0.8s] delay-150"
+                    id="testimonial-heading"
+                >
+                    What our clients have to say.
+                </h2>
+                <div class="">
+                    <p
+                        class="text-center text-gray-100 font-medium text-pbase md:text-base mb-5 md:max-w-2xl mx-auto translate-y-5 opacity-0 transition duration-[0.8s] delay-150"
+                        id="testimonial-paragraph"
+                    >
+                        View positive feedback from our clients on how Phos
+                        helped shed the light.
+                    </p>
+                </div>
+                <div class="flex items-center justify-center">
+                    <div class="w-20 h-20 bg-black"></div>
                 </div>
             </div>
         </section>
-        <!-- menbers section ends -->
+        <!-- testimonial section ends -->
 
         <!-- booking section -->
         <section

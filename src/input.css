@@ -12,13 +12,32 @@
     .clip-path-hero {
         clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
     }
+
+    .displayed {
+        opacity: 1;
+    }
 }
 
 @layer components {
+    .navbar-original {
+        @apply bg-transparent;
+    }
+    .navbar-scroll {
+        @apply bg-gray-950;
+    }
     .topbar-links {
         @apply px-[5px] py-[4px] text-[14px] rounded-md bg-gray-100 text-gray-950;
     }
     .nav-links {
         @apply text-white uppercase text-pbase px-5 py-3 bg-transparent hover:bg-gray-500;
     }
+    .slider-class {
+        @apply w-full h-full overflow-hidden absolute top-0 left-0 bg-cover bg-center bg-no-repeat opacity-0 transition duration-500 ease-in;
+    }
+    .no-content {
+        @apply opacity-0 -translate-x-[100%];
+    }
+    /* .current-content {
+        @apply opacity-1 translate-x-0;
+    } */
 }

@@ -1,3 +1,95 @@
+// animation for nav screen
+const navDesktop = document.getElementById("nav-desktop");
+const navMobile = document.getElementById("nav-mobile");
+
+document.addEventListener("DOMContentLoaded", (e) => {
+    navDesktop.classList.remove("opacity-0");
+    navMobile.classList.remove("opacity-0");
+});
+
+// intersection for overview navbar scrolling
+/*
+const header = document.querySelector("#header");
+
+const navScrollCallback = function (entries, observer) {
+    const [entry] = entries;
+
+    if (entry.isIntersecting) {
+        navDesktop.classList.remove("bg-transparent");
+        navDesktop.classList.add("bg-gray-950");
+    }
+};
+
+const navScrollOptions = {
+    root: null,
+    // threshold: [0, 0.5],
+    threshold: 0.1,
+};
+
+const navScrollObserver = new IntersectionObserver(
+    navScrollCallback,
+    navScrollOptions
+);
+navScrollObserver.observe(document.getElementById("overview"));
+*/
+
+/* Carousel or slider section
+=======================
+=====================*/
+const slides = document.querySelectorAll(".slider");
+
+const auto = true;
+const intervalTime = 10000;
+let slidesInterval;
+
+// next slide function
+const nextSlide = () => {
+    // Get current class
+    const current = document.querySelector(".displayed");
+    const currentContent = document.querySelector(".displayed .content");
+    // remove current class
+    current.classList.remove("displayed");
+    // next element sibling for next slide
+    if (current.nextElementSibling) {
+        current.nextElementSibling.classList.add("displayed");
+        document
+            .querySelector(".displayed .content")
+            .classList.remove("no-content");
+        document
+            .querySelector(".displayed .content")
+            .classList.add("current-content");
+    } else {
+        slides[0].classList.add("displayed");
+    }
+
+    setTimeout(() => current.classList.remove("current"));
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    setInterval(nextSlide, intervalTime);
+});
+
+// previous slide function
+/*
+const previousSlide = ()=> {
+    // Get current class
+    const current = document.querySelector(".displayed");
+    // remove current class
+    current.classList.remove("displayed");
+    // previous element sibling for previous slide
+    if (current.previousElementSibling) {
+        current.previousElementSibling.classList.add("displayed");
+    } else {
+        slides[slides.length - 1].classList.add("displayed");
+    }
+
+    setTimeout(()=> current.classList.remove("current"))
+}
+*/
+/* Carousel or slider section ends
+=======================
+=====================*/
+
 // intersection observer sections
 
 // intersection for overview h2
@@ -180,6 +272,34 @@ const membersObserver = new IntersectionObserver(
     membersOptions
 );
 membersObserver.observe(members);
+
+// intersection for services h2
+const testimonial = document.querySelector("#testimonial");
+const testimonialH2 = document.querySelector("#testimonial-heading");
+const testimonialP = document.querySelector("#testimonial-paragraph");
+
+const testimonialCallback = function (entries, observer) {
+    const [entry] = entries;
+
+    if (entry.isIntersecting) {
+        testimonialH2.classList.remove("translate-y-5");
+        testimonialH2.classList.remove("opacity-0");
+        testimonialP.classList.remove("translate-y-5");
+        testimonialP.classList.remove("opacity-0");
+    }
+};
+
+const testimonialOptions = {
+    root: null,
+    // threshold: [0, 0.5],
+    threshold: 0.2,
+};
+
+const testimonialObserver = new IntersectionObserver(
+    testimonialCallback,
+    testimonialOptions
+);
+testimonialObserver.observe(testimonial);
 
 // intersection for booking h2
 const booking = document.querySelector("#booking");
