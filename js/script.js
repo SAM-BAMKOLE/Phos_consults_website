@@ -7,14 +7,36 @@ document.addEventListener("DOMContentLoaded", (e) => {
     navMobile.classList.remove("opacity-0");
 });
 
+// navbar for mobile
+const menu = document.getElementById("menu-btn");
+const nav = document.getElementById("navbar-sticky");
+
+let navState = false;
+
+function changeNavState() {
+    if (navState) {
+        nav.classList.remove("-left-[100%]");
+    } else {
+        nav.classList.add("-left-[100%]");
+    }
+}
+
+menu.addEventListener("click", () => {
+    navState = !navState;
+    changeNavState();
+});
+
 // intersection for overview navbar scrolling
-/*
+
 const header = document.querySelector("#header");
 
 const navScrollCallback = function (entries, observer) {
     const [entry] = entries;
 
     if (entry.isIntersecting) {
+        navDesktop.classList.add("bg-transparent");
+        navDesktop.classList.remove("bg-gray-950");
+    } else {
         navDesktop.classList.remove("bg-transparent");
         navDesktop.classList.add("bg-gray-950");
     }
@@ -22,16 +44,15 @@ const navScrollCallback = function (entries, observer) {
 
 const navScrollOptions = {
     root: null,
-    // threshold: [0, 0.5],
-    threshold: 0.1,
+    rootMargin: "-100px 0px 0px 0px",
+    threshold: 0.7,
 };
 
 const navScrollObserver = new IntersectionObserver(
     navScrollCallback,
     navScrollOptions
 );
-navScrollObserver.observe(document.getElementById("overview"));
-*/
+navScrollObserver.observe(header);
 
 /* Carousel or slider section
 =======================

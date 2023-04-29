@@ -16,6 +16,9 @@
     .displayed {
         opacity: 1;
     }
+    .current-testimonial {
+        opacity: 1;
+    }
 }
 
 @layer components {
