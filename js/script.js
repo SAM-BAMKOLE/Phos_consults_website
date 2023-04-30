@@ -294,7 +294,7 @@ const membersObserver = new IntersectionObserver(
 );
 membersObserver.observe(members);
 
-// intersection for services h2
+// intersection for testimonial h2
 const testimonial = document.querySelector("#testimonial");
 const testimonialH2 = document.querySelector("#testimonial-heading");
 const testimonialP = document.querySelector("#testimonial-paragraph");
@@ -313,7 +313,7 @@ const testimonialCallback = function (entries, observer) {
 const testimonialOptions = {
     root: null,
     // threshold: [0, 0.5],
-    threshold: 0.2,
+    threshold: 0.4,
 };
 
 const testimonialObserver = new IntersectionObserver(
@@ -321,6 +321,127 @@ const testimonialObserver = new IntersectionObserver(
     testimonialOptions
 );
 testimonialObserver.observe(testimonial);
+
+// testimonial slider section
+/*
+const testimonialSlider = document.getElementById("testimonial-images");
+testimonialSlider.addEventListener("click", (e) => {
+    if (e.target.id) {
+        console.log(e.target.id);
+    }
+});
+*/
+// testimonial slider section ends
+
+// intersection for projects h2
+const projects = document.querySelector("#projects");
+const projectsH2 = document.querySelector("#projects-heading");
+const projectsP = document.querySelector("#projects-paragraph");
+
+const projectsCallback = function (entries, observer) {
+    const [entry] = entries;
+
+    if (entry.isIntersecting) {
+        projectsH2.classList.remove("translate-y-5");
+        projectsH2.classList.remove("opacity-0");
+        projectsP.classList.remove("translate-y-5");
+        projectsP.classList.remove("opacity-0");
+    }
+};
+
+const projectsOptions = {
+    root: null,
+    // threshold: [0, 0.5],
+    threshold: 0.2,
+};
+
+const projectsObserver = new IntersectionObserver(
+    projectsCallback,
+    projectsOptions
+);
+projectsObserver.observe(projects);
+
+// intersection for projects links
+const projectsLinks = document.querySelectorAll("#project-links div");
+
+const projectsLinksCallback = function (entries, observer) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove("translate-y-10");
+            entry.target.classList.remove("opacity-0");
+        }
+    });
+};
+
+const projectsLinksOptions = {
+    root: null,
+    threshold: 0.5,
+    rootMargin: "0px",
+};
+
+const projectsLinksObserver = new IntersectionObserver(
+    projectsLinksCallback,
+    projectsLinksOptions
+);
+
+projectsLinks.forEach((el) => {
+    projectsLinksObserver.observe(el);
+});
+
+// intersection for articles h2
+const articles = document.querySelector("#articles");
+const articlesH2 = document.querySelector("#articles-heading");
+const articlesP = document.querySelector("#articles-paragraph");
+
+const articlesCallback = function (entries, observer) {
+    const [entry] = entries;
+
+    if (entry.isIntersecting) {
+        articlesH2.classList.remove("translate-y-5");
+        articlesH2.classList.remove("opacity-0");
+        articlesP.classList.remove("translate-y-5");
+        articlesP.classList.remove("opacity-0");
+    }
+};
+
+const articlesOptions = {
+    root: null,
+    // threshold: [0, 0.5],
+    threshold: 0.4,
+};
+
+const articlesObserver = new IntersectionObserver(
+    articlesCallback,
+    articlesOptions
+);
+articlesObserver.observe(articles);
+
+// intersection for articles links
+const articlesLinks = document.querySelectorAll("#articles-links a");
+
+const articlesLinksCallback = function (entries, observer) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove("translate-y-10");
+            entry.target.classList.remove("opacity-0");
+        }
+    });
+};
+
+const articlesLinksOptions = {
+    root: null,
+    threshold: 0.5,
+    rootMargin: "0px",
+};
+
+const articlesLinksObserver = new IntersectionObserver(
+    articlesLinksCallback,
+    articlesLinksOptions
+);
+
+articlesLinks.forEach((el) => {
+    articlesLinksObserver.observe(el);
+});
 
 // intersection for booking h2
 const booking = document.querySelector("#booking");
