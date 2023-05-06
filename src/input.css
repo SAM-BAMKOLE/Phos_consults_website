@@ -24,6 +24,9 @@
     .current-testimonial {
         opacity: 1;
     }
+    .current-testimonial-text {
+        opacity: 1;
+    }
 }
 
 @layer components {

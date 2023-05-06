@@ -294,6 +294,61 @@ const membersObserver = new IntersectionObserver(
 );
 membersObserver.observe(members);
 
+// intersection for clients h2
+const clients = document.querySelector("#clients");
+const clientsH2 = document.querySelector("#clients-heading");
+const clientsP = document.querySelector("#clients-paragraph");
+
+const clientsCallback = function (entries, observer) {
+    const [entry] = entries;
+
+    if (entry.isIntersecting) {
+        clientsH2.classList.remove("translate-y-5");
+        clientsH2.classList.remove("opacity-0");
+        clientsP.classList.remove("translate-y-5");
+        clientsP.classList.remove("opacity-0");
+    }
+};
+
+const clientsOptions = {
+    root: null,
+    // threshold: [0, 0.5],
+    threshold: 0.2,
+};
+
+const clientsObserver = new IntersectionObserver(
+    clientsCallback,
+    clientsOptions
+);
+clientsObserver.observe(clients);
+
+// intersection for clients links
+const clientLinks = document.querySelectorAll("#clients-list div");
+
+const clientLinksCallback = function (entries, observer) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove("translate-y-10");
+            entry.target.classList.remove("opacity-0");
+        }
+    });
+};
+
+const clientLinksOptions = {
+    root: null,
+    threshold: 0.6,
+    rootMargin: "0px",
+};
+
+const clientLinksObserver = new IntersectionObserver(
+    clientLinksCallback,
+    clientLinksOptions
+);
+
+document.querySelectorAll("#clients-list div").forEach((el) => {
+    clientLinksObserver.observe(el);
+});
+
 // intersection for testimonial h2
 const testimonial = document.querySelector("#testimonial");
 const testimonialH2 = document.querySelector("#testimonial-heading");
@@ -323,14 +378,21 @@ const testimonialObserver = new IntersectionObserver(
 testimonialObserver.observe(testimonial);
 
 // testimonial slider section
-/*
+
 const testimonialSlider = document.getElementById("testimonial-images");
+const allText = document.querySelectorAll(".testimonial-text");
+
 testimonialSlider.addEventListener("click", (e) => {
-    if (e.target.id) {
-        console.log(e.target.id);
+    let currentText = document.querySelector(".current-testimonial-text");
+    let image = document.querySelector(".current-testimonial");
+    if (e.target.dataset.id) {
+        image.classList.remove("current-testimonial");
+        e.target.parentElement.classList.add("current-testimonial");
+        currentText.classList.remove("current-testimonial-text");
+        allText[e.target.dataset.id].classList.add("current-testimonial-text");
     }
 });
-*/
+
 // testimonial slider section ends
 
 // intersection for projects h2
