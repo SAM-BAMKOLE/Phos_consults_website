@@ -16,12 +16,13 @@ module.exports = {
                     "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/hero-3.jpg')",
                 "slider-four":
                     "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/hero-4.jpg')",
+                team: "linear-gradient(90deg transparent, transparent, rgba(0, 0, 0, 0.6))",
             },
             fontFamily: {
                 raleway: [' "Raleway", sans-serif; '],
             },
             colors: {
-                phosOrange: "#d65712",
+                phosOrange: "#ff7300",
                 phosBlue: "#09067c",
             },
         },
