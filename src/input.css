@@ -68,10 +68,10 @@
         @apply opacity-100;
     }
     .header-h1 {
-        @apply tracking-wider text-white font-semibold md:font-bold text-5xl md:text-[65px] leading-[1];
+        @apply tracking-wider text-white font-semibold md:font-bold text-5xl md:text-[55px] leading-[1];
     }
     .header-p {
-        @apply text-white p-4 rounded-md bg-opacity-10 bg-gray-300 text-base md:text-xl mt-3 font-medium;
+        @apply text-white p-4 rounded-md bg-opacity-10 bg-gray-300 text-base md:text-xl mt-2 font-medium;
     }
     .overview {
         @apply rounded-md bg-gray-900 border border-gray-300 p-2 hover:bg-gray-700 px-7 transition duration-[300];

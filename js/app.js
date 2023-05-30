@@ -1,4 +1,9 @@
 // AOS
+// import AOS from "../node_modules/aos/dist/aos.js";
+// import "../node_modules/aos/dist/aos.css";
+// import AOS from "../node_modules/aos/dist/aos.esm";
+// import "aos/dist/aos.css";
+
 AOS.init({
     offset: 200,
     delay: 50,
@@ -11,11 +16,9 @@ AOS.init({
 // navbar
 // animation for nav screen
 const navDesktop = document.getElementById("nav-desktop");
-const navMobile = document.getElementById("nav-mobile");
 
 document.addEventListener("DOMContentLoaded", (e) => {
     navDesktop.classList.remove("opacity-0");
-    navMobile.classList.remove("opacity-0");
 });
 
 // navbar for mobile
