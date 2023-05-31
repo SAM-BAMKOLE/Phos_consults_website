@@ -1,16 +1,16 @@
 // AOS
-// import AOS from "../node_modules/aos/dist/aos.js";
+import AOS from "../node_modules/aos/dist/aos";
 // import "../node_modules/aos/dist/aos.css";
 // import AOS from "../node_modules/aos/dist/aos.esm";
 // import "aos/dist/aos.css";
 
-// AOS.init({
-//     offset: 200,
-//     delay: 50,
-//     duration: 800,
-//     easing: "ease-in-out",
-//     once: true,
-// });
+AOS.init({
+    offset: 200,
+    delay: 50,
+    duration: 800,
+    easing: "ease-in-out",
+    once: true,
+});
 // AOS
 
 // navbar
