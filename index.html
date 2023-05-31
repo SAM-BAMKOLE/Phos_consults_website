@@ -84,7 +84,9 @@
                             >
                         </li>
                     </ul>
-                    <div class="flex flex-col md:flex-row md:space-x-10 w-full">
+                    <div
+                        class="flex flex-col md:flex-row md:space-x-10 w-full md:justify-end"
+                    >
                         <span class="">
                             <a
                                 href="#"
@@ -351,7 +353,7 @@
             >
                 <div class="pt-0 pb-10 md:py-20" id="about-content-left">
                     <h2
-                        class="text-black font-medium text-lg md:text-2xl mb-5 md:max-w-2xl hidden md:block"
+                        class="text-black font-semibold text-lg md:text-2xl mb-5 md:max-w-2xl hidden md:block"
                         data-aos="fade-right"
                     >
                         Strategy Driven Leadership Development
@@ -360,13 +362,15 @@
                         class="text-pbase text-gray-500 my-5"
                         data-aos="fade-right"
                     >
-                        Welcome to Phos Consults, a team of professionals
-                        focused on helping businesses enjoy growth. At Phos
-                        Consults, we excel in both business strategy planning
-                        and implementation. We recognize the significance of
-                        corporate strategy to every company. From strategic
-                        planning to implementation, we'll assist you in
-                        transforming your business.
+                        <span class="hidden md:inline-block"
+                            >Welcome to Phos Consults, a team of professionals
+                            focused on helping businesses enjoy growth.
+                        </span>
+                        At Phos Consults, we excel in both business strategy
+                        planning and implementation. We recognize the
+                        significance of corporate strategy to every company.
+                        From strategic planning to implementation, we'll assist
+                        you in transforming your business.
                     </p>
                     <ul class="font-semibold text-pbase" data-aos="fade-right">
                         <li class="flex items-center mb-2">
@@ -408,10 +412,19 @@
                     data-aos="fade-in"
                 >
                     <h2
-                        class="text-black font-medium text-center text-lg md:text-2xl mb-5 md:max-w-2xl md:hidden mt-10"
+                        class="text-black font-semibold text-center text-lg md:text-2xl md:max-w-2xl md:hidden mt-10"
                     >
                         Strategy Driven Leadership Development
                     </h2>
+                    <p
+                        class="text-center text-gray-700 font-medium text-pbase md:text-base mb-5 md:max-w-2xl mx-auto md:hidden"
+                        id="services-paragraph"
+                        data-aos="fade-up"
+                    >
+                        We are skilled in and we offer diver services and
+                        strategies that will surely give your business a big
+                        boost.
+                    </p>
                     <img
                         src="./images/about.png"
                         alt=""
@@ -596,9 +609,10 @@
         <!-- services section ends -->
 
         <!-- quote section -->
-        <section class="bg-phosBlue" data-aos="fade-right">
+        <section class="bg-phosBlue">
             <div
                 class="px-3 md:px-0 mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-7 md:gap-20 py-14"
+                data-aos="fade-right"
             >
                 <p class="text-white text-lg md:text-xl font-semibold">
                     Are you looking for professional advice for your business or
@@ -896,7 +910,7 @@
                         class="w-12 h-12 rounded-full border-2 border-gray-50 overflow-hidden opacity-50"
                     >
                         <img
-                            src="./images/81.jpg"
+                            src="./images/27.jpg"
                             class="object-cover w-full"
                             data-id="1"
                             alt=""
@@ -916,7 +930,7 @@
                         class="w-12 h-12 rounded-full border-2 border-gray-50 overflow-hidden opacity-50"
                     >
                         <img
-                            src="./images/97.jpg"
+                            src="./images/87.jpg"
                             class="object-cover w-full"
                             data-id="3"
                             alt=""
@@ -1576,7 +1590,7 @@
         </footer>
         <!-- footer section ends -->
 
-        <!-- <script src="node_modules/aos/dist/aos.js"></script> -->
+        <script src="node_modules/aos/dist/aos.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init({
