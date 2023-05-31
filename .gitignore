@@ -1,5 +1,5 @@
 node_modules
 maybe.html
 WEBSITE REFURBISHING PROJECT-2.docx
-/js/data.js
-/js/script.js
+data.js
+webpack.config.js
