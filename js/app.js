@@ -111,3 +111,11 @@ setInterval(() => {
 }, 10000);
 
 // slider code ends
+
+// footer copyright year
+const copyYear = document.getElementById("year");
+
+const currDate = new Date();
+const currentYear = currDate.getFullYear();
+
+copyYear.textContent = currentYear;
