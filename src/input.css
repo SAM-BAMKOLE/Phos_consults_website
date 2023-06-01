@@ -74,7 +74,7 @@
         @apply tracking-wider text-white font-semibold md:font-bold text-[38px] md:text-[55px] leading-[1] capitalize;
     }
     .header-p {
-        @apply text-white p-3 md:p-4 rounded-md bg-opacity-10 bg-gray-400 text-pbase md:text-xl mt-2 font-medium;
+        @apply text-white p-3 md:p-4 rounded-md bg-opacity-10 bg-gray-800 text-pbase md:text-xl mt-2 font-medium;
     }
     .overview {
         @apply rounded-md bg-gray-900 border border-gray-300 p-2 hover:bg-gray-700 px-7 transition duration-[300];

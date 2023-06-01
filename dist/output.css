@@ -1541,6 +1541,10 @@ html {
   width: 100%;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -1559,6 +1563,10 @@ html {
 
 .flex-shrink {
   flex-shrink: 1;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .-translate-x-1\/2 {
@@ -2640,6 +2648,10 @@ html {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:max-w-2xl {

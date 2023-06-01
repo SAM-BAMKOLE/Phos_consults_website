@@ -108,7 +108,7 @@ setInterval(() => {
     }
     manualAction(currentSlide);
     currentSlide++;
-}, 10000);
+}, 15000);
 
 // slider code ends
 
