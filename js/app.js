@@ -58,7 +58,7 @@ navScrollObserver.observe(header);
 // navbar
 
 // testimonial slider section
-
+/*
 const testimonialSlider = document.getElementById("testimonial-images");
 const allText = document.querySelectorAll(".testimonial-text");
 
@@ -71,6 +71,27 @@ testimonialSlider.addEventListener("click", (e) => {
         currentText.classList.remove("current-testimonial-text");
         allText[e.target.dataset.id].classList.add("current-testimonial-text");
     }
+});
+*/
+// testimonial slider
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    grabCursor: true,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
 });
 
 // testimonial slider section ends

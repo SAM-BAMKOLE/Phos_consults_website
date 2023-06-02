@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Phos consults home page</title>
-        <link rel="stylesheet" href="./dist/output.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -16,6 +15,14 @@
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700;800;900&display=swap"
             rel="stylesheet"
         />
+        <!-- swiper css -->
+        <link rel="stylesheet" href="swiper-css/swiper-bundle.min.css" />
+        <!-- box icon -->
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./dist/output.css" />
 
         <script
             src="https://kit.fontawesome.com/3dd2eae61f.js"
@@ -99,22 +106,22 @@
                         >
                             <span>
                                 <a href="#" class="topbar-links">
-                                    <i class="fa fa-linkedin"></i>
+                                    <i class="bx bxl-linkedin"></i>
                                 </a>
                             </span>
                             <span>
                                 <a href="#" class="topbar-links">
-                                    <i class="fa fa-instagram"></i>
+                                    <i class="bx bxl-instagram"></i>
                                 </a>
                             </span>
                             <span>
                                 <a href="#" class="topbar-links">
-                                    <i class="fa fa-whatsapp"></i>
+                                    <i class="bx bxl-whatsapp"></i>
                                 </a>
                             </span>
                             <span>
                                 <a href="#" class="topbar-links">
-                                    <i class="fa fa-twitter"></i>
+                                    <i class="bx bxl-twitter"></i>
                                 </a>
                             </span>
                         </div>
@@ -266,6 +273,57 @@
                         class="btn w-[8px] h-[8px] rounded-full bg-gray-300 bg-opacity-70"
                     ></div>
                 </div>
+                <div
+                    class="sticky hidden md:block max-w-[600px] mr-10 float-right top-[10vh] rounded-md bg-addressHero p-5"
+                >
+                    <div class="flex flex-col items-center md:block">
+                        <p
+                            class="font-semibold text-base text-white capitalize mb-5"
+                        >
+                            Address
+                        </p>
+                        <div
+                            class="footer-links text-gray-400 text-center md:text-left flex flex-col items-center md:flex-row md:items-start"
+                        >
+                            <i
+                                class="bx bx-current-location text-xl mr-3 mt-1 text-phosOrange"
+                            ></i>
+                            <div class="">
+                                <p
+                                    class="font-semibold text-base text-gray-200"
+                                    class=""
+                                >
+                                    Head Office:
+                                </p>
+                                <span
+                                    class="hover:text-gray-100 hover:underline"
+                                    >16, Buckingham street, Portsmouth,
+                                    UK.</span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="footer-links text-gray-400 text-center md:text-left flex flex-col items-center md:flex-row md:items-start"
+                        >
+                            <i
+                                class="bx bx-current-location text-xl mr-3 mt-1 text-phosOrange"
+                            ></i>
+                            <div class="">
+                                <p
+                                    class="font-semibold text-base text-gray-200"
+                                    class=""
+                                >
+                                    Branch Office:
+                                </p>
+                                <span
+                                    class="hover:text-gray-100 hover:underline"
+                                    >Top floor DSTV Buildiing, Liberty road, Off
+                                    ring road Ibadan.</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- header section ends -->
@@ -360,21 +418,25 @@
                         Strategy Driven Leadership Development
                     </h2>
                     <p
-                        class="text-sm text-gray-500 my-5 md:text-pbase"
+                        class="text-sm text-gray-700 my-5 md:text-pbase"
                         data-aos="fade-right"
                     >
-                        <span class="hidden md:inline-block"
-                            >Welcome to Phos Consults, a team of professionals
-                            focused on helping businesses enjoy growth.
+                        <span class="hidden md:inline-block">
+                            Phos Consults is your trusted partner in propelling
+                            businesses towards unparalleled success.
                         </span>
-                        At Phos Consults, we excel in both business strategy,
-                        Research and Data collection, planning and
-                        implementation and IT outsourcing such as: mobile app
-                        creation, web development, Data Analysis, cyber security
-                        e.t.c . We recognize the significance of corporate
-                        strategy to every company. From strategic planning to
-                        implementation, we'll assist you in transforming your
-                        business.
+                        Our team of seasoned professionals is dedicated to
+                        empowering enterprises through a comprehensive suite of
+                        services that encompass business strategy, meticulous
+                        Research and Data collection, strategic planning,
+                        flawless implementation, and innovative IT outsourcing
+                        such as: mobile app development, web development, Data
+                        Analysis, cyber security e.t.c. With our unwavering
+                        commitment to excellence, we unlock the true potential
+                        of your organization, revolutionizing every aspect of
+                        your operations and driving exponential growth. Discover
+                        the transformative power of Phos Consults and embark on
+                        a journey of limitless possibilities for your business.
                     </p>
                     <ul
                         class="font-semibold text-sm md:text-pbase"
@@ -398,7 +460,7 @@
                             </span>
                             Development of financial models
                         </li>
-                        <li class="flex items-center">
+                        <li class="flex items-center mb-2">
                             <span class="material-symbols-outlined mr-3">
                                 check_circle
                             </span>
@@ -479,11 +541,9 @@
                         data-aos="fade-up"
                     >
                         <div class="w-10 flex justify-center">
-                            <span
-                                class="material-symbols-outlined mr-3 mt-3 text-phosBlue text-sm"
-                            >
-                                mediation
-                            </span>
+                            <i
+                                class="bx bx-search-alt mr-3 mt-3 text-phosBlue text-3xl"
+                            ></i>
                         </div>
                         <div class="">
                             <h3
@@ -504,12 +564,10 @@
                         class="flex py-4 px-5 bg-white rounded-sm hover:shadow-xl hover:bg-gray-100"
                         data-aos="fade-up"
                     >
-                        <div class="pr-3 pt-2 flex justify-center">
-                            <span
-                                class="material-symbols-outlined mr-3 mt-3 text-phosBlue text-sm"
-                            >
-                                analytics
-                            </span>
+                        <div class="w-10 flex justify-center">
+                            <i
+                                class="bx bx-analyse mr-3 mt-3 text-phosBlue text-3xl"
+                            ></i>
                         </div>
                         <div class="">
                             <h3
@@ -532,11 +590,9 @@
                         data-aos="fade-up"
                     >
                         <div class="w-10 flex justify-center">
-                            <span
-                                class="material-symbols-outlined mr-3 mt-3 text-phosBlue text-sm"
-                            >
-                                query_stats
-                            </span>
+                            <i
+                                class="bx bx-line-chart mr-3 mt-3 text-phosBlue text-3xl"
+                            ></i>
                         </div>
                         <div class="">
                             <h3
@@ -558,11 +614,9 @@
                         data-aos="fade-up"
                     >
                         <div class="w-10 flex justify-center">
-                            <span
-                                class="material-symbols-outlined mr-3 mt-3 text-phosBlue text-sm"
-                            >
-                                integration_instructions
-                            </span>
+                            <i
+                                class="bx bx-user-pin mr-3 mt-3 text-phosBlue text-3xl"
+                            ></i>
                         </div>
                         <div class="">
                             <h3
@@ -585,11 +639,9 @@
                         data-aos="fade-up"
                     >
                         <div class="w-10 flex justify-center">
-                            <span
-                                class="material-symbols-outlined mr-3 mt-3 text-phosBlue text-sm"
-                            >
-                                mic
-                            </span>
+                            <i
+                                class="bx bx-network-chart mr-3 mt-3 text-phosBlue text-3xl"
+                            ></i>
                         </div>
                         <div class="">
                             <h3
@@ -604,17 +656,16 @@
                             </p>
                         </div>
                     </a>
+
                     <a
                         href="#"
                         class="py-4 px-5 bg-white rounded-sm hover:shadow-xl flex"
                         data-aos="fade-up"
                     >
                         <div class="w-10 flex justify-center">
-                            <span
-                                class="material-symbols-outlined mr-3 mt-3 text-phosBlue text-sm"
-                            >
-                                monetization_on
-                            </span>
+                            <i
+                                class="bx bx-desktop mr-3 mt-3 text-phosBlue text-3xl"
+                            ></i>
                         </div>
                         <div class="">
                             <h3
@@ -625,10 +676,7 @@
                             <p class="text-sm md:text-pbase text-gray-500">
                                 We offer a range of IT services designed to help
                                 businesses of all sizes and industries optimize
-                                their technology infrastructure. Our IT services
-                                cover a wide range of areas, including: 1.
-                                Cybersecurity, Digital marketing services, IT
-                                Consulting e.t.c.
+                                their technology infrastructure.
                             </p>
                         </div>
                     </a>
@@ -684,9 +732,11 @@
                         different fields.
                     </p>
                 </div>
-                <div class="flex flex-wrap gap-10 md:flex-row w-full">
+                <div
+                    class="flex flex-wrap gap-10 md:grid md:grid-cols-3 w-full"
+                >
                     <div
-                        class="h-[350px] md:h-[400px] flex justify-center items-center w-full md:w-auto flex-col bg-black rounded-md"
+                        class="h-[350px] md:h-[400px] flex justify-center items-center w-full flex-col bg-black rounded-md"
                         data-aos="fade-up"
                     >
                         <div
@@ -711,7 +761,7 @@
                         </h5>
                     </div>
                     <div
-                        class="h-[350px] md:h-[400px] flex justify-center items-center w-full md:w-auto flex-col bg-black rounded-md"
+                        class="h-[350px] md:h-[400px] flex justify-center items-center w-full flex-col bg-black rounded-md"
                         data-aos="fade-up"
                     >
                         <div
@@ -736,7 +786,7 @@
                         </h5>
                     </div>
                     <div
-                        class="h-[350px] md:h-[400px] flex justify-center items-center w-full md:w-auto flex-col bg-black rounded-md"
+                        class="h-[350px] md:h-[400px] flex justify-center items-center w-full flex-col bg-black rounded-md"
                         data-aos="fade-up"
                     >
                         <div
@@ -761,7 +811,7 @@
                         </h5>
                     </div>
                     <div
-                        class="h-[350px] md:h-[400px] flex justify-center items-center w-full md:w-auto flex-col bg-black rounded-md"
+                        class="h-[350px] md:h-[400px] flex justify-center items-center w-full flex-col bg-black rounded-md"
                         data-aos="fade-up"
                     >
                         <div
@@ -786,7 +836,7 @@
                         </h5>
                     </div>
                     <div
-                        class="h-[350px] md:h-[400px] flex justify-center items-center w-full md:w-auto flex-col bg-black rounded-md"
+                        class="h-[350px] md:h-[400px] flex justify-center items-center w-full flex-col bg-black rounded-md"
                         data-aos="fade-up"
                     >
                         <div
@@ -811,7 +861,7 @@
                         </h5>
                     </div>
                     <div
-                        class="h-[350px] md:h-[400px] flex justify-center items-center w-full md:w-auto flex-col bg-black rounded-md"
+                        class="h-[350px] md:h-[400px] flex justify-center items-center w-full flex-col bg-black rounded-md"
                         data-aos="fade-up"
                     >
                         <div
@@ -820,7 +870,7 @@
                             <img
                                 src="./images/team6.jpg"
                                 alt="our team member"
-                                class="w-full mx-auto rounded-md"
+                                class="w-4/5 mx-auto rounded-md"
                             />
                             <div
                                 class="absolute bottom-0 left-0 w-full h-[200px] border-b border-b-black bg-gradient-to-t from-black to-transparent"
@@ -918,98 +968,41 @@
         <!-- client section ends  -->
         <!-- testimonial section  -->
         <section
-            class="bg-phosBlue mx-auto py-10 md:py-20 clip-path-hero"
+            class="bg-gray-100 mx-auto py-10 md:py-20 clip-path-hero pb-10 md:px-10"
             id="testimonial"
         >
-            <div class="mx-auto max-w-7xl px-3 md:px-0">
-                <h2
-                    class="text-center text-white font-semibold text-xl md:text-2xl mb-2 md:max-w-2xl mx-auto"
-                    id="testimonial-heading"
-                    data-aos="fade-up"
-                >
-                    What our clients have to say.
-                </h2>
-                <div class="">
-                    <p
-                        class="text-center text-gray-100 font-medium text-pbase md:text-base mb-5 md:max-w-2xl mx-auto"
-                        id="testimonial-paragraph"
+            <div class="relative pb-5 md:pb-10">
+                <div class="mx-auto max-w-6xl px-3 mySwiper overflow-hidden">
+                    <h2
+                        class="text-center text-gray-950 font-semibold text-xl md:text-2xl mb-2 md:max-w-2xl mx-auto"
+                        id="testimonial-heading"
                         data-aos="fade-up"
                     >
-                        View positive feedback from our clients on how Phos
-                        helped shed the light.
-                    </p>
-                </div>
-                <div
-                    class="flex items-center justify-center gap-3 md:gap-5"
-                    id="testimonial-images"
-                    data-aos="fade-in"
-                >
-                    <div
-                        class="w-10 h-10 rounded-full border-2 border-gray-50 overflow-hidden opacity-50"
-                    >
-                        <img
-                            src="./images/27.jpg"
-                            class="object-cover w-full"
-                            data-id="0"
-                            alt=""
-                        />
-                    </div>
-                    <div
-                        class="w-12 h-12 rounded-full border-2 border-gray-50 overflow-hidden opacity-50"
-                    >
-                        <img
-                            src="./images/27.jpg"
-                            class="object-cover w-full"
-                            data-id="1"
-                            alt=""
-                        />
-                    </div>
-                    <div
-                        class="w-14 h-14 rounded-full border-2 border-gray-50 overflow-hidden opacity-50 current-testimonial"
-                    >
-                        <img
-                            src="./images/19.jpg"
-                            class="object-cover w-full"
-                            data-id="2"
-                            alt=""
-                        />
-                    </div>
-                    <div
-                        class="w-12 h-12 rounded-full border-2 border-gray-50 overflow-hidden opacity-50"
-                    >
-                        <img
-                            src="./images/87.jpg"
-                            class="object-cover w-full"
-                            data-id="3"
-                            alt=""
-                        />
-                    </div>
-                    <div
-                        class="w-10 h-10 rounded-full border-2 border-gray-50 overflow-hidden opacity-50"
-                    >
-                        <img
-                            src="./images/87.jpg"
-                            class="object-cover w-full"
-                            data-id="4"
-                            alt=""
-                        />
-                    </div>
-                </div>
-                <div class="relative w-full max-w-4xl mx-auto">
-                    <p
-                        class="text-[60px] text-white opacity-60 italic leading-[5px] mt-10"
-                    >
-                        "
-                    </p>
-                    <div
-                        class="text-white relative h-[250px] max-h-[300px] md:h-[100px]"
-                    >
-                        <div
-                            class="absolute top-0 left-0 transition duration-300 delay-150 opacity-0 testimonial-text"
-                            id="1"
+                        What our clients have to say.
+                    </h2>
+                    <div class="">
+                        <p
+                            class="text-center text-gray-800 font-medium text-pbase md:text-base mb-5 md:max-w-2xl mx-auto"
+                            id="testimonial-paragraph"
+                            data-aos="fade-up"
                         >
+                            View positive feedback from our clients on how Phos
+                            helped shed the light.
+                        </p>
+                    </div>
+
+                    <div class="swiper-wrapper">
+                        <article
+                            class="swiper-slide flex flex-col items-center"
+                        >
+                            <!-- <div class="testi-content"> -->
+                            <img
+                                src="./images/testi2.jpg"
+                                alt="first client"
+                                class="w-24 h-24 md:w-32 md:h-32 rounded-full"
+                            />
                             <p
-                                class="text-sm md:text-base font-medium text-center px-5 md:px-10"
+                                class="text-sm md:text-base font-medium text-center mt-8 px-3 md:px-0"
                             >
                                 The professionalism and expertise of Phos
                                 Consults Limited exceeded our expectations. They
@@ -1023,17 +1016,34 @@
                                 transformed our business. We couldn't be happier
                                 with the results.
                             </p>
-                            <p class="text-center font-bold mt-5 text-pbase">
-                                Stalite Multinational Concept Limited.
-                            </p>
-                            <p class="text-center text-sm">&nbsp;</p>
-                        </div>
-                        <div
-                            class="absolute top-0 left-0 transition duration-300 delay-150 opacity-0 testimonial-text"
-                            id="2"
+                            <i
+                                class="bx bxs-quote-alt-left text-[35px] md:text-[55px] text-phosBlue mt-5 md:mt-8"
+                            ></i>
+                            <div class="mt-5 md:mt-10 text-center">
+                                <h4
+                                    class="font-bold text-pbase uppercase text-gray-950"
+                                >
+                                    Stalite Multinational Concept Limited.
+                                </h4>
+                                <h5
+                                    class="font-normal text-pbase capitalize text-gray-700"
+                                >
+                                    &nbsp;
+                                </h5>
+                            </div>
+                            <!-- </div> -->
+                        </article>
+                        <article
+                            class="swiper-slide flex flex-col items-center"
                         >
+                            <!-- <div class="testi-content"> -->
+                            <img
+                                src="./images/testi4.jpg"
+                                alt="first client"
+                                class="w-24 h-24 md:w-32 md:h-32 rounded-full"
+                            />
                             <p
-                                class="text-sm md:text-base font-medium text-center px-5 md:px-10"
+                                class="text-sm md:text-base font-medium text-center mt-8 px-3 md:px-0"
                             >
                                 Working with Phos Consults was an eye-opening
                                 experience. Their consultants chalenged our
@@ -1042,17 +1052,34 @@
                                 Thanks to their expertise, we achieved
                                 breakthrough results and a competitve edge.
                             </p>
-                            <p class="text-center font-bold mt-5 text-pbase">
-                                PFarms Limited
-                            </p>
-                            <p class="text-center text-sm">&nbsp;</p>
-                        </div>
-                        <div
-                            class="absolute top-0 left-0 transition duration-300 delay-150 opacity-0 current-testimonial-text testimonial-text"
-                            id="3"
+                            <i
+                                class="bx bxs-quote-alt-left text-[35px] md:text-[55px] text-phosBlue mt-5 md:mt-8"
+                            ></i>
+                            <div class="mt-5 md:mt-10 text-center">
+                                <h4
+                                    class="font-bold text-pbase uppercase text-gray-950"
+                                >
+                                    PFarms Limited
+                                </h4>
+                                <h5
+                                    class="font-normal text-pbase capitalize text-gray-700"
+                                >
+                                    &nbsp;
+                                </h5>
+                            </div>
+                            <!-- </div> -->
+                        </article>
+                        <article
+                            class="swiper-slide flex flex-col items-center"
                         >
+                            <!-- <div class="testi-content"> -->
+                            <img
+                                src="./images/testi5.jpg"
+                                alt="first client"
+                                class="w-24 h-24 md:w-32 md:h-32 rounded-full"
+                            />
                             <p
-                                class="text-sm md:text-base font-medium text-center px-5 md:px-10"
+                                class="text-sm md:text-base font-medium text-center mt-8 px-3 md:px-0"
                             >
                                 We engaged Phos Consults for a complex project
                                 and they deliverd exceptional results within the
@@ -1061,19 +1088,34 @@
                                 navigate challenges were impressive. We would
                                 gladly collaborate with them again.
                             </p>
-                            <p class="text-center font-bold mt-5 text-pbase">
-                                Gamble Alert
-                            </p>
-                            <p class="text-center text-sm">
-                                Head of Corporate Communications
-                            </p>
-                        </div>
-                        <div
-                            class="absolute top-0 left-0 transition duration-300 delay-150 opacity-0 testimonial-text"
-                            id="4"
+                            <i
+                                class="bx bxs-quote-alt-left text-[35px] md:text-[55px] text-phosBlue mt-5 md:mt-8"
+                            ></i>
+                            <div class="mt-5 md:mt-10 text-center">
+                                <h4
+                                    class="font-bold text-pbase uppercase text-gray-950"
+                                >
+                                    Gamble Alert
+                                </h4>
+                                <h5
+                                    class="font-normal text-pbase capitalize text-gray-700"
+                                >
+                                    Head of Corporate Communications
+                                </h5>
+                            </div>
+                            <!-- </div> -->
+                        </article>
+                        <article
+                            class="swiper-slide flex flex-col items-center"
                         >
+                            <!-- <div class="testi-content"> -->
+                            <img
+                                src="./images/testi1.jpg"
+                                alt="first client"
+                                class="w-24 h-24 md:w-32 md:h-32 rounded-full"
+                            />
                             <p
-                                class="text-sm md:text-base font-medium text-center px-5 md:px-10"
+                                class="text-sm md:text-base font-medium text-center mt-8 px-3 md:px-0"
                             >
                                 We couldn't be more pleased with the
                                 collaborative approach of Phos Consults. Their
@@ -1086,16 +1128,34 @@
                                 knowledge. Their comprehensive analysis and
                                 strategic
                             </p>
-                            <p class="text-center font-bold mt-5 text-pbase">
-                                Femi
-                            </p>
-                            <p class="text-center text-sm">Stemres</p>
-                        </div>
-                        <div
-                            class="absolute top-0 left-0 transition duration-300 delay-150 opacity-0 testimonial-text"
+                            <i
+                                class="bx bxs-quote-alt-left text-[35px] md:text-[55px] text-phosBlue mt-5 md:mt-8"
+                            ></i>
+                            <div class="mt-5 md:mt-10 text-center">
+                                <h4
+                                    class="font-bold text-pbase uppercase text-gray-950"
+                                >
+                                    Femi
+                                </h4>
+                                <h5
+                                    class="font-normal text-pbase capitalize text-gray-700"
+                                >
+                                    Stemres
+                                </h5>
+                            </div>
+                            <!-- </div> -->
+                        </article>
+                        <article
+                            class="swiper-slide flex flex-col items-center"
                         >
+                            <!-- <div class="testi-content"> -->
+                            <img
+                                src="./images/testi3.jpg"
+                                alt="first client"
+                                class="w-24 h-24 md:w-32 md:h-32 rounded-full"
+                            />
                             <p
-                                class="text-sm md:text-base font-medium text-center px-5 md:px-10"
+                                class="text-sm md:text-base font-medium text-center mt-8 px-3 md:px-0"
                             >
                                 We were impressed by the personalised attention
                                 and tailored solutions offered by Phos Consults.
@@ -1105,17 +1165,31 @@
                                 improvements. We highly recommend their
                                 services.
                             </p>
-                            <p class="text-center font-bold mt-5 text-pbase">
-                                Raphael
-                            </p>
-                            <p class="text-center text-sm">MLDC</p>
-                        </div>
+                            <i
+                                class="bx bxs-quote-alt-left text-[35px] md:text-[55px] text-phosBlue mt-5 md:mt-8"
+                            ></i>
+                            <div class="mt-5 md:mt-10 text-center">
+                                <h4
+                                    class="font-bold text-pbase uppercase text-gray-950"
+                                >
+                                    Raphael
+                                </h4>
+                                <h5
+                                    class="font-normal text-pbase capitalize text-gray-700"
+                                >
+                                    MLDC
+                                </h5>
+                            </div>
+                            <!-- </div> -->
+                        </article>
                     </div>
-                    <p
-                        class="text-[60px] text-white opacity-60 italic text-right leading-[5px] my-5 mr-2"
-                    >
-                        "
-                    </p>
+                    <div
+                        class="swiper-button-next nav-btn hidden md:block"
+                    ></div>
+                    <div
+                        class="swiper-button-prev nav-btn hidden md:block"
+                    ></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -1147,7 +1221,7 @@
                     <a href="#" class="project-link" data-aos="fade-up">
                         <div class="">
                             <h5
-                                class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+                                class="mb-2 text-pbase font-semibold text-gray-900 dark:text-white"
                             >
                                 Baseline and Endline Survey for Livelihood
                                 Enhancement Training
@@ -1172,7 +1246,7 @@
                     <a href="#" class="project-link" data-aos="fade-up">
                         <div class="">
                             <h5
-                                class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+                                class="mb-2 text-pbase font-semibold text-gray-900 dark:text-white"
                             >
                                 Qualitative Data collaction and transcription of
                                 the “FUTURE OF WORK” project in Nigeria.
@@ -1197,7 +1271,7 @@
                     <a href="#" class="project-link" data-aos="fade-up">
                         <div class="">
                             <h5
-                                class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+                                class="mb-2 text-pbase font-semibold text-gray-900 dark:text-white"
                             >
                                 3000 clean data from teachers and lecturers
                                 (survey participants) Across The 6 –
@@ -1272,18 +1346,18 @@
                         </div>
                         <div class="p-4">
                             <h5
-                                class="text-xl mb-2 font-bold tracking-tight text-gray-900 dark:text-white"
+                                class="text-base mb-2 font-semibold text-gray-900 dark:text-white"
                             >
                                 The Rise Of Soft Skills As The New Power Skills.
                             </h5>
                             <p
-                                class="text-pbase mb-3 font-normal text-gray-700 dark:text-gray-400"
+                                class="text-sm mb-3 font-normal text-gray-700 dark:text-gray-400"
                             >
                                 The demands of the workplace are constantly
                                 changing, which is no secret...
                             </p>
                             <p
-                                class="text-phosBlue text-pbase text-right font-semibold"
+                                class="text-phosBlue text-sm text-right font-semibold"
                             >
                                 Date: May 2022
                             </p>
@@ -1303,18 +1377,18 @@
                         </div>
                         <div class="p-4">
                             <h5
-                                class="text-xl mb-2 font-bold tracking-tight text-gray-900 dark:text-white"
+                                class="text-base mb-2 font-semibold text-gray-900 dark:text-white"
                             >
                                 Improving Emotional Intelligence.
                             </h5>
                             <p
-                                class="text-pbase mb-3 font-normal text-gray-700 dark:text-gray-400"
+                                class="text-sm mb-3 font-normal text-gray-700 dark:text-gray-400"
                             >
                                 Perhaps, we all know someone who listens well,
                                 either at work or in...
                             </p>
                             <p
-                                class="text-phosBlue text-pbase text-right font-semibold"
+                                class="text-phosBlue text-sm text-right font-semibold"
                             >
                                 Date: May 2022
                             </p>
@@ -1334,19 +1408,19 @@
                         </div>
                         <div class="p-4">
                             <h5
-                                class="text-xl mb-2 font-bold tracking-tight text-gray-900 dark:text-white"
+                                class="text-base mb-2 font-semibold text-gray-900 dark:text-white"
                             >
                                 Building A Stronger Team: The Benefits of
                                 Effective Team Building
                             </h5>
                             <p
-                                class="text-pbase mb-3 font-normal text-gray-700 dark:text-gray-400"
+                                class="text-sm mb-3 font-normal text-gray-700 dark:text-gray-400"
                             >
                                 Every company wants to promote a happy
                                 workplace, increase...
                             </p>
                             <p
-                                class="text-phosBlue text-pbase text-right font-semibold"
+                                class="text-phosBlue text-sm text-right font-semibold"
                             >
                                 Date: May 2022
                             </p>
@@ -1396,42 +1470,78 @@
                         <input
                             type="text"
                             placeholder="First name*"
-                            class="bg-white rounded-lg shadow-md focus:outline-none w-full"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-r-lg border-l-gray-100 focus:outline-none w-full"
                             required
                         />
                         <input
                             type="text"
                             placeholder="Last name*"
-                            class="bg-white rounded-lg shadow-md focus:outline-none w-full"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-r-lg border-l-gray-100 focus:outline-none w-full"
                             required
                         />
                         <input
                             type="email"
                             placeholder="Email address"
-                            class="bg-white rounded-lg shadow-md focus:outline-none w-full"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-r-lg border-l-gray-100 focus:outline-none w-full"
                             required
                         />
                         <input
                             type="tel"
                             placeholder="Phone number"
-                            class="bg-white rounded-lg shadow-md focus:outline-none w-full"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-r-lg border-l-gray-100 focus:outline-none w-full"
                             required
                         />
                         <input
                             type="text"
                             placeholder="Company name (optional)"
-                            class="bg-white rounded-lg shadow-md focus:outline-none w-full"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-r-lg border-l-gray-100 focus:outline-none w-full"
                         />
-                        <input
+                        <!-- <input
                             type="text"
                             placeholder="Select enquiry"
                             class="bg-white rounded-lg shadow-md focus:outline-none w-full"
                             required
-                        />
+                        /> -->
+                        <!-- <select
+                            name="Select enquiry"
+                            id=""
+                            class="bg-white rounded-lg shadow-md focus:outline-none w-full"
+                            required
+                        >
+                            <option value="">General Enquiry</option>
+                            <option value="">Strategy</option>
+                            <option value="">Technology</option>
+                            <option value="">People</option>
+                            <option value="">International Development</option>
+                            <option value="">Digital Learning</option>
+                            <option value="">Training</option>
+                        </select> -->
+
+                        <!-- <label for="states" class="sr-only"
+                            >Select enquiry</label
+                        > -->
+                        <select
+                            id="states"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-r-lg border-l-gray-100 w-full"
+                        >
+                            <option class="max-w-full" selected>
+                                General Enquiry
+                            </option>
+                            <option class="max-w-full">Strategy</option>
+                            <option class="max-w-full">Technology</option>
+                            <option class="max-w-full">People</option>
+                            <option class="max-w-full">
+                                International Development
+                            </option>
+                            <option class="max-w-full">Digital Learning</option>
+                            <option class="max-w-full">Training</option>
+                        </select>
+
                         <textarea
-                            class="bg-white rounded-lg shadow-md focus:outline-none col-span-2 h-32 resize-none w-full"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-r-lg border-l-gray-100 col-span-2 h-32 resize-none w-full"
                             id=""
                             placeholder="Message..."
+                            required
                         ></textarea>
                     </div>
                     <div class="mt-10 text-center">
@@ -1447,185 +1557,304 @@
         <!-- booking section ends -->
         <!-- footer section starts -->
         <footer
-            class="bg-phosBlue mx-auto py-10 md:pt-20 md:pb-7 md:clip-path-article"
+            class="bg-gray-950 mx-auto py-10 md:pt-20 md:pb-7 md:clip-path-article"
             id="footer"
         >
-            <div class="mx-auto max-w-7xl px-3 md:px-0">
-                <div
-                    class="flex flex-col md:grid md:grid-cols-2 md:items-center md:justify-between"
-                >
-                    <p class="text-white text-pbase md:text-xl mb-2 md:mb-0">
-                        Subscribe to our newsletter
-                    </p>
-                    <form
-                        class="flex justify-stretch w-full md:w-[90%] bg-white rounded-md items-start overflow-hidden h-9"
+            <div
+                class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between mb-10 md:mb-20 px-3 md:px-10"
+            >
+                <div class="mb-4 w-full md:w-auto">
+                    <img
+                        src="./images/phos logo2.png"
+                        class="h-10 md:h-20 mx-auto md:mx-0 opacity-80"
+                        alt=""
+                    />
+                </div>
+                <form class="w-[90%] md:w-auto mx-auto md:mx-0">
+                    <label
+                        class="text-white text-sm md:text-pbase mb-2 md:mb-0"
+                        for="newsletter"
+                    >
+                        Join us today, let us help you grow your business.
+                    </label>
+                    <div
+                        class="flex flex-row justify-start md:justify-normal w-full md:w-[600px] bg-white rounded-md items-start overflow-hidden h-9 md:h-10"
                     >
                         <input
                             type="text"
-                            class="focus:outline-none border-0 flex-1 h-9"
+                            class="focus:outline-none border-0 flex-1 h-9 md:h-10"
                             id="newsletter"
                         />
                         <button
                             type="text"
                             for="newsletter"
-                            class="text-center border-0 focus:outline-none h-9"
+                            class="text-center border-0 focus:outline-none h-9 md:h-10 flex items-center justify-center"
                         >
-                            <span
-                                class="material-symbols-outlined text-black text-sm w-3 -rotate-45 text-center font-semibold"
-                            >
-                                send
-                            </span>
+                            <i
+                                class="bx bx-send text-black text-2xl -rotate-45 text-center font-semibold"
+                            ></i>
                         </button>
-                    </form>
-                </div>
-                <div
-                    class="flex flex-col gap-x-28 md:gap-0 md:grid md:grid-cols-3 md:items-start mt-5 md:mt-14 w-full"
-                >
-                    <div
-                        class="flex flex-col items-start w-full md:w-auto md:items-center"
-                    >
-                        <div class="w-full md:w-auto">
-                            <div class="mb-4 w-full md:w-auto">
-                                <img
-                                    src="./images/phos logo2.png"
-                                    class="h-14 md:h-16 mx-auto opacity-60"
-                                    alt=""
-                                />
-                            </div>
-                            <ul
-                                class="text-gray-300 font-medium w-4/5 mx-auto md:w-auto divide-y-2 divide-gray-50 divide-opacity-25 md:divide-y-0"
-                            >
-                                <li class="w-full md:w-auto">
-                                    <a href="#" class="footer-links">
-                                        <span
-                                            class="material-symbols-outlined text-white text-sm w-3 mr-5"
-                                        >
-                                            call
-                                        </span>
-
-                                        <span class=""
-                                            >+234 (0) 705 138 1049</span
-                                        ></a
-                                    >
-                                </li>
-                                <li class="w-full md:w-auto">
-                                    <a href="#" class="footer-links">
-                                        <span
-                                            class="material-symbols-outlined text-white text-sm w-3 mr-5"
-                                        >
-                                            mail
-                                        </span>
-                                        <span class=""
-                                            >info@phosconsults.com</span
-                                        ></a
-                                    >
-                                </li>
-                                <li class="w-full md:w-auto">
-                                    <a href="#" class="footer-links">
-                                        <span
-                                            class="material-symbols-outlined text-white text-sm w-3 mr-5"
-                                        >
-                                            location_on
-                                        </span>
-                                        <span class=""
-                                            >Challenge Bus stop, Ibadan</span
-                                        >
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                    <div
-                        class="flex flex-col items-start w-full md:w-auto md:items-center mt-10"
-                    >
-                        <div class="w-full">
-                            <p
-                                class="md:text-white text-base md:text-xl mb-2 md:mb-4 font-semibold text-center text-phosOrange"
-                            >
-                                Links
-                            </p>
-                            <ul
-                                class="text-gray-300 font-medium w-4/5 mx-auto md:w-auto divide-y-2 divide-gray-50 divide-opacity-25 md:divide-y-0"
-                            >
-                                <li class="w-full md:w-auto">
-                                    <a href="#" class="footer-links">Home</a>
-                                </li>
-                                <li class="w-full md:w-auto">
-                                    <a href="#" class="footer-links">About</a>
-                                </li>
-                                <li class="w-full md:w-auto">
-                                    <a href="#" class="footer-links"
-                                        >Services</a
-                                    >
-                                </li>
-                                <li class="w-full md:w-auto">
-                                    <a href="#" class="footer-links"
-                                        >Articles</a
-                                    >
-                                </li>
-                                <li class="w-full md:w-auto">
-                                    <a href="#" class="footer-links">Contact</a>
-                                </li>
-                                <li class="w-full md:w-auto">
-                                    <a href="#" class="footer-links">Reports</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div
-                        class="flex flex-col items-start text-lg w-full md:w-auto md:items-center mt-10"
-                    >
-                        <div class="w-full">
-                            <p
-                                class="md:text-white text-base md:text-xl mb-2 md:mb-4 font-semibold text-center text-phosOrange"
-                            >
-                                Social
-                            </p>
-                            <div
-                                class="flex gap-3 items-center justify-center text-gray-50 mt-3"
-                            >
-                                <span>
-                                    <a
-                                        href="#"
-                                        class="text-white text-xl hover:text-gray-400"
-                                    >
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </span>
-                                <span>
-                                    <a
-                                        href="#"
-                                        class="text-white text-xl hover:text-gray-400"
-                                    >
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </span>
-                                <span>
-                                    <a
-                                        href="#"
-                                        class="text-white text-xl hover:text-gray-400"
-                                    >
-                                        <i class="fa fa-whatsapp"></i>
-                                    </a>
-                                </span>
-                                <span>
-                                    <a
-                                        href="#"
-                                        class="text-white text-xl hover:text-gray-400"
-                                    >
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </span>
-                            </div>
-                            <!-- <p class="text-gray-100 text-pbase"></p> -->
-                        </div>
-                    </div>
-                </div>
-                <p class="mt-10 text-center text-sm text-gray-400">
-                    @ <span id="year">2023</span> Phos Consults. All rights
-                    reserved.
-                </p>
+                </form>
             </div>
+            <div
+                class="mx-auto max-w-[1500px] px-3 md:px-10 flex flex-col md:flex-row justify-between space-y-12 md:space-y-0"
+            >
+                <div class="flex flex-col items-center md:block">
+                    <p
+                        class="font-semibold text-base text-white capitalize mb-5"
+                    >
+                        Contact us
+                    </p>
+                    <ul class="text-center md:text-left">
+                        <li class="w-full md:w-auto text-gray-400">
+                            <a
+                                href="#"
+                                class="footer-links hover:text-gray-50 transition-all duration-150"
+                            >
+                                <i class="bx bx-phone text-xl mr-3 mt-1"></i>
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >+234 (0) 705 138 1049</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400">
+                            <a
+                                href="#"
+                                class="footer-links hover:text-gray-50 transition-all duration-150"
+                            >
+                                <i class="bx bx-envelope text-xl mr-3 mt-1"></i>
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >info@phosconsults.com</span
+                                ></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col items-center md:block">
+                    <p
+                        class="font-semibold text-base text-white capitalize mb-5"
+                    >
+                        Phos Consults Ltd.
+                    </p>
+                    <ul class="text-center md:text-left">
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >Research and data collection</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >Business Development</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >Learning and development training</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >Human resource management</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >Technology services</span
+                                ></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col items-center md:block">
+                    <p
+                        class="font-semibold text-base text-white capitalize mb-5"
+                    >
+                        Quick Links
+                    </p>
+                    <ul class="text-center md:text-left">
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >Home</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >About</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >services</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >Articles</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >Contact</span
+                                ></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col items-center md:block">
+                    <p
+                        class="font-semibold text-base text-white capitalize mb-5"
+                    >
+                        Address
+                    </p>
+                    <div
+                        class="footer-links text-gray-400 text-center md:text-left flex flex-col items-center md:flex-row md:items-start"
+                    >
+                        <i
+                            class="bx bx-current-location text-xl mr-3 mt-1 text-phosOrange"
+                        ></i>
+                        <div class="">
+                            <p
+                                class="font-semibold text-base text-gray-200"
+                                class=""
+                            >
+                                Head Office:
+                            </p>
+                            <span class="hover:text-gray-100 hover:underline"
+                                >16, Buckingham street, Portsmouth, UK.</span
+                            >
+                        </div>
+                    </div>
+                    <div
+                        class="footer-links text-gray-400 text-center md:text-left flex flex-col items-center md:flex-row md:items-start"
+                    >
+                        <i
+                            class="bx bx-current-location text-xl mr-3 mt-1 text-phosOrange"
+                        ></i>
+                        <div class="">
+                            <p
+                                class="font-semibold text-base text-gray-200"
+                                class=""
+                            >
+                                Branch Office:
+                            </p>
+                            <span class="hover:text-gray-100 hover:underline"
+                                >Top floor DSTV Buildiing, Liberty road, Off
+                                ring road Ibadan.</span
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center md:block">
+                    <p
+                        class="font-semibold text-base text-white capitalize mb-5"
+                    >
+                        Social media
+                    </p>
+                    <div
+                        class="flex gap-3 items-center justify-center text-gray-50 mt-3"
+                    >
+                        <span>
+                            <a
+                                href="#"
+                                class="text-gray-400 text-xl md:text-2xl hover:text-gray-50 transition duration-200"
+                            >
+                                <i class="bx bxl-linkedin"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a
+                                href="#"
+                                class="text-gray-400 text-xl md:text-2xl hover:text-gray-50 transition duration-200"
+                            >
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a
+                                href="#"
+                                class="text-gray-400 text-xl md:text-2xl hover:text-gray-50 transition duration-200"
+                            >
+                                <i class="bx bxl-whatsapp"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a
+                                href="#"
+                                class="text-gray-400 text-xl md:text-2xl hover:text-gray-50 transition duration-200"
+                            >
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <p
+                class="mt-10 text-center text-sm text-gray-400 pt-10 border-t-2 border-t-gray-400"
+            >
+                @ <span id="year">2023</span> Phos Consults. All rights
+                reserved.
+            </p>
         </footer>
         <!-- footer section ends -->
 
@@ -1640,6 +1869,9 @@
                 once: true,
             });
         </script>
+        <!-- swiper js -->
+        <script src="./js/swiper-bundle.min.js" defer></script>
+
         <script type="module" src="./js/app.js" defer></script>
     </body>
 </html>
