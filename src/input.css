@@ -82,7 +82,7 @@
         @apply text-white capitalize font-bold text-base bg-transparent tracking-wider relative hover:text-amber-300;
     }
     .nav-active {
-        @apply bg-gray-600 md:bg-transparent md:after:content-['']  md:after:w-full  md:after:h-[3px]  md:after:bg-white  md:after:rounded-sm  md:after:absolute  md:after:top-6  md:after:left-0;
+        @apply bg-gray-600 lg:bg-transparent lg:after:content-['']  lg:after:w-full  lg:after:h-[3px]  lg:after:bg-white  lg:after:rounded-sm  lg:after:absolute  lg:after:top-6  lg:after:left-0;
     }
     .slider-class {
         @apply w-full h-full overflow-hidden absolute top-0 left-0 bg-cover bg-center bg-no-repeat opacity-0 transition duration-500 ease-in;
@@ -100,10 +100,10 @@
         @apply mx-5 md:mx-0 absolute top-32 md:top-36 md:left-20 md:max-w-[600px];
     }
     .header-h1 {
-        @apply tracking-wider text-white font-semibold md:font-bold text-[38px] md:text-[55px] leading-[1] capitalize;
+        @apply tracking-wider text-white font-semibold md:font-bold text-[38px] md:text-[50px]  leading-[1] capitalize;
     }
     .header-p {
-        @apply text-white p-3 md:p-4 rounded-md bg-opacity-10 bg-gray-800 text-pbase md:text-xl mt-2 font-medium;
+        @apply text-white rounded-md bg-opacity-10 text-pbase md:text-xl mt-2 font-medium;
     }
     .overview {
         @apply rounded-md bg-gray-900 border border-gray-300 p-2 hover:bg-gray-700 px-7 transition duration-[300];

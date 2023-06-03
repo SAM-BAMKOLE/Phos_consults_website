@@ -1,3 +1,33 @@
+const setNavOnload = () => {
+    const segments = window.location.pathname.split("/");
+    const toDelete = [];
+
+    const allPages = [
+        "index.html",
+        "about.html",
+        "services.html",
+        "blog.html",
+        "contact.html",
+    ];
+    let navActive = document.querySelector(".nav-active");
+    navActive.classList.remove("nav-active");
+
+    for (var i = 0; i < segments.length; i++) {
+        if (segments[i].length < 1) {
+            toDelete.push(i);
+        }
+    }
+    for (var i = 0; i < toDelete.length; i++) {
+        segments.splice(i, 1);
+    }
+    let filename = segments[segments.length - 1];
+
+    if (document.getElementById(filename)) {
+        document.getElementById(filename).classList.add("nav-active");
+    }
+};
+document.addEventListener("DOMContentLoaded", setNavOnload);
+
 // navbar
 // animation for nav screen
 const navDesktop = document.getElementById("nav-desktop");

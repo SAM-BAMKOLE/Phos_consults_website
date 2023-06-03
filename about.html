@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Phos consults home page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- swiper css -->
+        <link rel="stylesheet" href="swiper-css/swiper-bundle.min.css" />
+        <!-- box icon -->
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./dist/output.css" />
+
+        <script
+            src="https://kit.fontawesome.com/3dd2eae61f.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+    </head>
+    <body>
+        <div class="max-w-7xl mx-auto relative">
+            <!-- navbar for desktop screen -->
+
+            <nav
+                class="flex items-center justify-between md:justify-start fixed top-0 left-0 z-[1000] w-full px-5 md:px-20 py-5"
+                id="nav-desktop"
+            >
+                <div class="flex items-center mr-20">
+                    <span class="">
+                        <img
+                            src="./images/phos logo2.png"
+                            alt="Phos consults logo"
+                            class="h-[35px] md:h-[50px]"
+                        />
+                    </span>
+                </div>
+                <div
+                    class="flex flex-col md:flex-row items-center justify-between w-full absolute top-[75px] -left-[100%] bg-gray-800 md:relative md:left-auto md:top-auto md:bg-transparent transition-all duration-300 ease-in"
+                    id="navbar-links"
+                >
+                    <ul
+                        class="flex flex-col md:flex-row items-center space-x-0 md:space-x-10 w-full"
+                    >
+                        <li class="w-full text-center">
+                            <a
+                                href="/index.html"
+                                class="nav-links nav-active w-full text-center py-2 md:py-0 block md:inline-block"
+                                id="index.html"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="w-full text-center">
+                            <a
+                                href="#"
+                                class="nav-links w-full text-center py-2 md:py-0 block md:inline-block"
+                                id="about.html"
+                                >About</a
+                            >
+                        </li>
+                        <li class="w-full text-center">
+                            <a
+                                href=""
+                                class="nav-links w-full text-center py-2 md:py-0 block md:inline-block"
+                                id="services.html"
+                                >Services</a
+                            >
+                        </li>
+                        <li class="w-full text-center">
+                            <a
+                                href="#"
+                                class="nav-links w-full text-center py-2 md:py-0 block md:inline-block"
+                                id="blog.html"
+                                >Blog</a
+                            >
+                        </li>
+                        <li class="w-full text-center">
+                            <a
+                                href="#"
+                                class="nav-links w-full text-center py-2 md:py-0 block md:inline-block"
+                                id="contact.html"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                    <div
+                        class="flex flex-col md:flex-row md:space-x-10 w-full md:justify-end"
+                    >
+                        <span class="">
+                            <a
+                                href="#"
+                                class="text-amber-300 font-medium text-pbase w-full text-center py-2 md:py-0 block md:inline-block"
+                                >info@phosconsults.com</a
+                            >
+                        </span>
+                        <div
+                            class="flex gap-3 items-center justify-center md:justify-end py-4 md:py-0"
+                        >
+                            <span>
+                                <a
+                                    href="https://www.linkedin.com/company/tosingodwin-consulting/"
+                                    class="topbar-links"
+                                    target="_blank"
+                                >
+                                    <i class="bx bxl-linkedin"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a
+                                    href="https://www.instagram.com.phosconsults/"
+                                    class="topbar-links"
+                                    target="_blank"
+                                >
+                                    <i class="bx bxl-instagram"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a
+                                    href="https://call.whatsapp.com/video/Ju4WJrRkhNIH4zkTWOTyUr"
+                                    class="topbar-links"
+                                    target="_blank"
+                                >
+                                    <i class="bx bxl-whatsapp"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a
+                                    href="https://twitter.com/phosconsults"
+                                    class="topbar-links"
+                                    target="_blank"
+                                >
+                                    <i class="bx bxl-twitter"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="space-y-[3.5px] transition block md:hidden"
+                    id="menu"
+                >
+                    <div
+                        class="w-[15px] h-[2.5px] bg-gray-50 rounded-md block"
+                    ></div>
+                    <div
+                        class="w-[20px] h-[2.5px] bg-gray-50 rounded-md block"
+                    ></div>
+                    <div
+                        class="w-[25px] h-[2.5px] bg-gray-50 rounded-md block"
+                    ></div>
+                </div>
+            </nav>
+            <!-- navbar for desktop screen -->
+
+            <!-- header content section -->
+        </div>
+        <!-- header section starts -->
+        <header
+            class="w-full h-[90vh] max-h-[768px] md:h-screen clip-path-hero overflow-hidden bg-gray-900"
+            id="header"
+        >
+            <div class="w-full h-full relative">
+                <div class="slide active absolute w-full h-full top-0 left-0">
+                    <img
+                        src="./images/1.jpg"
+                        alt="image-1"
+                        class="w-full h-full object-cover"
+                    />
+                    <div class="hero-content">
+                        <h1 class="header-h1">
+                            Strategic business development expertise
+                        </h1>
+                        <p class="header-p">
+                            Accelerate business growth with our expert guidance
+                            in strategic business development and management.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide absolute w-full h-full top-0 left-0">
+                    <img
+                        src="./images/2.jpg"
+                        alt="image-2"
+                        class="w-full h-full object-cover"
+                    />
+                    <div class="hero-content">
+                        <h1 class="header-h1">
+                            Data driven research solutions
+                        </h1>
+                        <p class="header-p">
+                            Unlock insights with our data-driven-research
+                            solutions for informed decision-making and strategy
+                            development
+                        </p>
+                    </div>
+                </div>
+                <div class="slide absolute w-full h-full top-0 left-0">
+                    <img
+                        src="./images/3.jpg"
+                        alt="image-3"
+                        class="w-full h-full object-cover"
+                    />
+                    <div class="hero-content">
+                        <h1 class="header-h1">
+                            Optimize HR performance with strategic management
+                        </h1>
+                        <p class="header-p">
+                            Maximize your organization's potential by
+                            strategically managing human resources to drive
+                            productivity and success.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide absolute w-full h-full top-0 left-0">
+                    <img
+                        src="./images/4.jpg"
+                        alt="image-4"
+                        class="w-full h-full object-cover"
+                    />
+                    <div class="hero-content">
+                        <h1 class="header-h1">
+                            Efficient project management services
+                        </h1>
+                        <p class="header-p">
+                            Expertise seamless project with our efficient
+                            project management services.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide absolute w-full h-full top-0 left-0">
+                    <img
+                        src="./images/5.jpg"
+                        alt="image-5"
+                        class="w-full h-full object-cover"
+                    />
+                    <div class="hero-content">
+                        <h1 class="header-h1">
+                            Cutting-edge technology solutions
+                        </h1>
+                        <p class="header-p">
+                            Stay ahead of the curve with our cutting-edge
+                            technology solutions for enhanced performance and
+                            productivity.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- links -->
+                <div
+                    class="flex justify-between md:justify-start md:gap-7 items-center text-pbase md:text-base absolute bottom-36 md:bottom-40 px-5 w-full md:ml-16"
+                >
+                    <a
+                        href="#"
+                        class="py-3 md:py-4 px-5 md:px-8 bg-gray-950 border border-gray-50 rounded-[35px] text-gray-50 text-lg font-semibold hover:shadow-xl"
+                        >Our services</a
+                    >
+                    <a
+                        href="#"
+                        class="py-3 md:py-4 px-5 md:px-8 bg-gray-100 rounded-[35px] text-grey-950 text-lg font-semibold hover:shadow-xl"
+                        >More about us</a
+                    >
+                </div>
+                <!-- links end -->
+
+                <div
+                    class="buttons absolute left-1/2 -translate-x-1/2 bottom-[10%] flex gap-4"
+                >
+                    <div
+                        class="btn w-[8px] h-[8px] rounded-full bg-gray-300 bg-opacity-70 activebtn"
+                    ></div>
+                    <div
+                        class="btn w-[8px] h-[8px] rounded-full bg-gray-300 bg-opacity-70"
+                    ></div>
+                    <div
+                        class="btn w-[8px] h-[8px] rounded-full bg-gray-300 bg-opacity-70"
+                    ></div>
+                    <div
+                        class="btn w-[8px] h-[8px] rounded-full bg-gray-300 bg-opacity-70"
+                    ></div>
+                    <div
+                        class="btn w-[8px] h-[8px] rounded-full bg-gray-300 bg-opacity-70"
+                    ></div>
+                </div>
+                <div
+                    class="sticky hidden lg:block max-w-[600px] mr-10 float-right top-[10vh] rounded-md bg-addressHero p-5"
+                >
+                    <div class="flex flex-col items-center md:block">
+                        <p
+                            class="font-semibold text-base text-white capitalize mb-5"
+                        >
+                            Address
+                        </p>
+                        <div
+                            class="footer-links text-gray-400 text-center md:text-left flex flex-col items-center md:flex-row md:items-start"
+                        >
+                            <i
+                                class="bx bx-current-location text-xl mr-3 mt-1 text-phosOrange"
+                            ></i>
+                            <div class="">
+                                <p
+                                    class="font-semibold text-base text-gray-200"
+                                    class=""
+                                >
+                                    Head Office:
+                                </p>
+                                <span
+                                    class="hover:text-gray-100 hover:underline"
+                                    >16, Buckingham street, Portsmouth,
+                                    UK.</span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="footer-links text-gray-400 text-center md:text-left flex flex-col items-center md:flex-row md:items-start"
+                        >
+                            <i
+                                class="bx bx-current-location text-xl mr-3 mt-1 text-phosOrange"
+                            ></i>
+                            <div class="">
+                                <p
+                                    class="font-semibold text-base text-gray-200"
+                                    class=""
+                                >
+                                    Branch Office:
+                                </p>
+                                <span
+                                    class="hover:text-gray-100 hover:underline"
+                                    >Top floor DSTV Buildiing, Liberty road, Off
+                                    ring road Ibadan.</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header section ends -->
+        <!-- footer section starts -->
+        <footer
+            class="bg-gray-950 mx-auto py-10 md:pt-20 md:pb-7 md:clip-path-article"
+            id="footer"
+        >
+            <div
+                class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between mb-10 md:mb-20 px-3 md:px-10"
+            >
+                <div class="mb-4 w-full md:w-auto">
+                    <img
+                        src="./images/phos logo2.png"
+                        class="h-10 md:h-20 mx-auto md:mx-0 opacity-80"
+                        alt=""
+                    />
+                </div>
+                <form class="w-[90%] md:w-auto mx-auto md:mx-0">
+                    <label
+                        class="text-white text-sm md:text-pbase mb-2 md:mb-0"
+                        for="newsletter"
+                    >
+                        Join us today, let us help you grow your business.
+                    </label>
+                    <div
+                        class="flex flex-row justify-start md:justify-normal w-full md:w-[600px] bg-white rounded-md items-start overflow-hidden h-9 md:h-10"
+                    >
+                        <input
+                            type="text"
+                            class="focus:outline-none border-0 flex-1 h-9 md:h-10"
+                            id="newsletter"
+                        />
+                        <button
+                            type="text"
+                            for="newsletter"
+                            class="text-center border-0 focus:outline-none h-9 md:h-10 flex items-center justify-center"
+                        >
+                            <i
+                                class="bx bx-send text-black text-2xl -rotate-45 text-center font-semibold"
+                            ></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div
+                class="mx-auto max-w-[1500px] px-3 md:px-10 flex flex-col md:flex-row justify-between space-y-12 md:space-y-0"
+            >
+                <div class="flex flex-col items-center md:block">
+                    <p
+                        class="font-semibold text-base text-white capitalize mb-5"
+                    >
+                        Contact us
+                    </p>
+                    <ul class="text-center md:text-left">
+                        <li class="w-full md:w-auto text-gray-400">
+                            <a
+                                href="#"
+                                class="footer-links hover:text-gray-50 transition-all duration-150"
+                            >
+                                <i class="bx bx-phone text-xl mr-3 mt-1"></i>
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >+234 (0) 705 138 1049</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400">
+                            <a
+                                href="#"
+                                class="footer-links hover:text-gray-50 transition-all duration-150"
+                            >
+                                <i class="bx bx-envelope text-xl mr-3 mt-1"></i>
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >info@phosconsults.com</span
+                                ></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col items-center md:block">
+                    <p
+                        class="font-semibold text-base text-white capitalize mb-5"
+                    >
+                        Phos Consults Ltd.
+                    </p>
+                    <ul class="text-center md:text-left">
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >Research and data collection</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >Business Development</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >Learning and development training</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >Human resource management</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >Technology services</span
+                                ></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col items-center md:block">
+                    <p
+                        class="font-semibold text-base text-white capitalize mb-5"
+                    >
+                        Quick Links
+                    </p>
+                    <ul class="text-center md:text-left">
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >Home</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >About</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >services</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >Articles</span
+                                ></a
+                            >
+                        </li>
+                        <li class="w-full md:w-auto text-gray-400 py-2">
+                            <a
+                                href="#"
+                                class="footer-links2 hover:text-gray-50 transition-all duration-150"
+                            >
+                                <span
+                                    class="hover:underline transition-all duration-150"
+                                    >Contact</span
+                                ></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col items-center md:block">
+                    <p
+                        class="font-semibold text-base text-white capitalize mb-5"
+                    >
+                        Address
+                    </p>
+                    <div
+                        class="footer-links text-gray-400 text-center md:text-left flex flex-col items-center md:flex-row md:items-start"
+                    >
+                        <i
+                            class="bx bx-current-location text-xl mr-3 mt-1 text-phosOrange"
+                        ></i>
+                        <div class="">
+                            <p
+                                class="font-semibold text-base text-gray-200"
+                                class=""
+                            >
+                                Head Office:
+                            </p>
+                            <span class="hover:text-gray-100 hover:underline"
+                                >16, Buckingham street, Portsmouth, UK.</span
+                            >
+                        </div>
+                    </div>
+                    <div
+                        class="footer-links text-gray-400 text-center md:text-left flex flex-col items-center md:flex-row md:items-start"
+                    >
+                        <i
+                            class="bx bx-current-location text-xl mr-3 mt-1 text-phosOrange"
+                        ></i>
+                        <div class="">
+                            <p
+                                class="font-semibold text-base text-gray-200"
+                                class=""
+                            >
+                                Branch Office:
+                            </p>
+                            <span class="hover:text-gray-100 hover:underline"
+                                >Top floor DSTV Buildiing, Liberty road, Off
+                                ring road Ibadan.</span
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center md:block">
+                    <p
+                        class="font-semibold text-base text-white capitalize mb-5"
+                    >
+                        Social media
+                    </p>
+                    <div
+                        class="flex gap-3 items-center justify-center text-gray-50 mt-3"
+                    >
+                        <span>
+                            <a
+                                href="https://www.linkedin.com/company/tosingodwin-consulting/"
+                                class="text-gray-400 text-xl md:text-2xl hover:text-gray-50 transition duration-200"
+                                target="_blank"
+                            >
+                                <i class="bx bxl-linkedin"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a
+                                href="https://www.instagram.com/phosconsults/"
+                                class="text-gray-400 text-xl md:text-2xl hover:text-gray-50 transition duration-200"
+                                target="_blank"
+                            >
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a
+                                href="https://call.whatsapp.com/video/Ju4WJrRkhNlH4zkTWOTyUr"
+                                class="text-gray-400 text-xl md:text-2xl hover:text-gray-50 transition duration-200"
+                                target="_blank"
+                            >
+                                <i class="bx bxl-whatsapp"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a
+                                href="https://twitter.com/phosconsults"
+                                class="text-gray-400 text-xl md:text-2xl hover:text-gray-50 transition duration-200"
+                                target="_blank"
+                            >
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <p
+                class="mt-10 text-center text-sm text-gray-400 pt-10 border-t-2 border-t-gray-400"
+            >
+                @ <span id="year">2023</span> Phos Consults. All rights
+                reserved.
+            </p>
+        </footer>
+        <!-- footer section ends -->
+
+        <script src="node_modules/aos/dist/aos.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 200,
+                delay: 50,
+                duration: 800,
+                easing: "ease-in-out",
+                once: true,
+            });
+        </script>
+        <!-- swiper js -->
+        <script src="./js/swiper-bundle.min.js" defer></script>
+
+        <script type="module" src="./js/app.js" defer></script>
+    </body>
+</html>
+
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
