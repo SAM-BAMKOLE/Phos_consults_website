@@ -15,6 +15,38 @@
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700;800;900&display=swap"
             rel="stylesheet"
         />
+        <!-- ========================== FAVICON ========================== -->
+        <!-- <link
+            rel="shortcut icon"
+            href="./images/faviconit/Favicon-70.png"
+            type="image/png"
+        />
+        <link
+            rel="shortcut icon"
+            href="./images/faviconit/Favicon-70.png"
+            type="image/png"
+        />
+        <link
+            rel="shortcut icon"
+            href="./images/faviconit/Favicon-64.png"
+            type="image/png"
+        />
+        <link
+            rel="shortcut icon"
+            href="./images/faviconit/Favicon-57.png"
+            type="image/png"
+        />
+        <link
+            rel="shortcut icon"
+            href="./images/faviconit/Favicon-32.png"
+            type="image/png"
+        />
+        <link
+            rel="shortcut icon"
+            href="./images/faviconit/Favicon-16.png"
+            type="image/png"
+        /> -->
+        <!-- ========================== FAVICON ========================== -->
         <!-- swiper css -->
         <link rel="stylesheet" href="swiper-css/swiper-bundle.min.css" />
         <!-- box icon -->
@@ -23,21 +55,22 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./dist/output.css" />
-
-        <script
-            src="https://kit.fontawesome.com/3dd2eae61f.js"
-            crossorigin="anonymous"
-        ></script>
+        <!-- ==========================AOS========================= -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+        <!-- ==========================AOS========================= -->
+        <!-- swiper js -->
+        <script src="./js/swiper-bundle.min.js" defer></script>
+
+        <script type="module" src="./js/app.js" defer></script>
     </head>
-    <body>
+    <body class="scroll-smooth">
         <div class="max-w-7xl mx-auto relative">
             <!-- navbar for desktop screen -->
 
             <nav
-                class="flex items-center justify-between md:justify-start fixed top-0 left-0 z-[1000] w-full px-5 md:px-20 py-5"
-                id="nav-desktop"
+                class="flex items-center justify-between lg:justify-start fixed top-0 left-0 z-[1000] w-full px-5 md:px-20 py-5 bg-gray-950"
+                id="nav"
             >
                 <div class="flex items-center mr-20">
                     <span class="">
@@ -49,16 +82,16 @@
                     </span>
                 </div>
                 <div
-                    class="flex flex-col md:flex-row items-center justify-between w-full absolute top-[75px] -left-[100%] bg-gray-800 md:relative md:left-auto md:top-auto md:bg-transparent transition-all duration-300 ease-in"
+                    class="flex flex-col lg:flex-row items-center justify-between w-full absolute top-[75px] -left-[100%] bg-gray-800 lg:relative lg:left-auto lg:top-auto lg:bg-transparent transition-all duration-300 ease-in"
                     id="navbar-links"
                 >
                     <ul
-                        class="flex flex-col md:flex-row items-center space-x-0 md:space-x-10 w-full"
+                        class="flex flex-col lg:flex-row items-center space-x-0 lg:space-x-10 w-full lg:w-full"
                     >
                         <li class="w-full text-center">
                             <a
                                 href="/index.html"
-                                class="nav-links nav-active w-full text-center py-2 md:py-0 block md:inline-block"
+                                class="nav-links nav-active w-full text-center py-2 lg:py-0 block md:inline-block"
                                 id="index.html"
                                 >Home</a
                             >
@@ -66,7 +99,7 @@
                         <li class="w-full text-center">
                             <a
                                 href="#"
-                                class="nav-links w-full text-center py-2 md:py-0 block md:inline-block"
+                                class="nav-links w-full text-center py-2 lg:py-0 block md:inline-block"
                                 id="about.html"
                                 >About</a
                             >
@@ -74,7 +107,7 @@
                         <li class="w-full text-center">
                             <a
                                 href=""
-                                class="nav-links w-full text-center py-2 md:py-0 block md:inline-block"
+                                class="nav-links w-full text-center py-2 lg:py-0 block md:inline-block"
                                 id="services.html"
                                 >Services</a
                             >
@@ -82,7 +115,7 @@
                         <li class="w-full text-center">
                             <a
                                 href="#"
-                                class="nav-links w-full text-center py-2 md:py-0 block md:inline-block"
+                                class="nav-links w-full text-center py-2 lg:py-0 block md:inline-block"
                                 id="blog.html"
                                 >Blog</a
                             >
@@ -90,14 +123,14 @@
                         <li class="w-full text-center">
                             <a
                                 href="#"
-                                class="nav-links w-full text-center py-2 md:py-0 block md:inline-block"
+                                class="nav-links w-full text-center py-2 lg:py-0 block md:inline-block"
                                 id="contact.html"
                                 >Contact</a
                             >
                         </li>
                     </ul>
                     <div
-                        class="flex flex-col md:flex-row md:space-x-10 w-full md:justify-end"
+                        class="flex flex-col lg:flex-row lg:space-x-10 w-full lg:justify-end"
                     >
                         <span class="">
                             <a
@@ -107,7 +140,7 @@
                             >
                         </span>
                         <div
-                            class="flex gap-3 items-center justify-center md:justify-end py-4 md:py-0"
+                            class="flex gap-3 items-center justify-center lg:justify-end py-4 lg:py-0"
                         >
                             <span>
                                 <a
@@ -120,7 +153,7 @@
                             </span>
                             <span>
                                 <a
-                                    href="https://www.instagram.com.phosconsults/"
+                                    href="https://www.instagram.com/phosconsults/"
                                     class="topbar-links"
                                     target="_blank"
                                 >
@@ -149,7 +182,7 @@
                     </div>
                 </div>
                 <div
-                    class="space-y-[3.5px] transition block md:hidden"
+                    class="space-y-[3.5px] transition block lg:hidden"
                     id="menu"
                 >
                     <div
@@ -169,133 +202,40 @@
         </div>
         <!-- header section starts -->
         <header
-            class="w-full h-[90vh] max-h-[768px] md:h-screen clip-path-hero overflow-hidden bg-gray-900"
+            class="w-full md:h-[75vh] md:max-h-[500px] py-14 overflow-hidden bg-pattern mt-[75px]"
             id="header"
         >
-            <div class="w-full h-full relative">
-                <div class="slide active absolute w-full h-full top-0 left-0">
-                    <img
-                        src="./images/1.jpg"
-                        alt="image-1"
-                        class="w-full h-full object-cover"
-                    />
-                    <div class="hero-content">
-                        <h1 class="header-h1">
-                            Strategic business development expertise
-                        </h1>
-                        <p class="header-p">
-                            Accelerate business growth with our expert guidance
-                            in strategic business development and management.
+            <div
+                class="w-full h-full relative flex flex-col lg:flex-row lg:items-center lg:justify-between max-w-6xl mx-auto px-5 lg:px-0"
+            >
+                <div class="min-h-28">
+                    <div class="hero2-content lg:max-w-[70%]">
+                        <h1 class="header2-h1">Get to know us</h1>
+                        <p class="header2-p">
+                            Know who we are, what we offer and why we are the
+                            best for your consulting needs.
                         </p>
+                        <!-- links -->
+                        <div
+                            class="flex justify-between md:justify-start md:gap-7 items-center text-pbase lg:text-base w-full mt-4"
+                        >
+                            <a
+                                href="#"
+                                class="py-3 lg:py-4 px-6 lg:px-8 bg-gray-950 border border-gray-50 rounded-[35px] text-gray-50 text-lg font-semibold"
+                                >Our services</a
+                            >
+                            <a
+                                href="#"
+                                class="py-3 lg:py-4 px-6 lg:px-8 bg-gray-100 rounded-[35px] text-grey-950 text-lg font-semibold shadow-md"
+                                >Contact us</a
+                            >
+                        </div>
+                        <!-- links end -->
                     </div>
                 </div>
 
-                <div class="slide absolute w-full h-full top-0 left-0">
-                    <img
-                        src="./images/2.jpg"
-                        alt="image-2"
-                        class="w-full h-full object-cover"
-                    />
-                    <div class="hero-content">
-                        <h1 class="header-h1">
-                            Data driven research solutions
-                        </h1>
-                        <p class="header-p">
-                            Unlock insights with our data-driven-research
-                            solutions for informed decision-making and strategy
-                            development
-                        </p>
-                    </div>
-                </div>
-                <div class="slide absolute w-full h-full top-0 left-0">
-                    <img
-                        src="./images/3.jpg"
-                        alt="image-3"
-                        class="w-full h-full object-cover"
-                    />
-                    <div class="hero-content">
-                        <h1 class="header-h1">
-                            Optimize HR performance with strategic management
-                        </h1>
-                        <p class="header-p">
-                            Maximize your organization's potential by
-                            strategically managing human resources to drive
-                            productivity and success.
-                        </p>
-                    </div>
-                </div>
-                <div class="slide absolute w-full h-full top-0 left-0">
-                    <img
-                        src="./images/4.jpg"
-                        alt="image-4"
-                        class="w-full h-full object-cover"
-                    />
-                    <div class="hero-content">
-                        <h1 class="header-h1">
-                            Efficient project management services
-                        </h1>
-                        <p class="header-p">
-                            Expertise seamless project with our efficient
-                            project management services.
-                        </p>
-                    </div>
-                </div>
-                <div class="slide absolute w-full h-full top-0 left-0">
-                    <img
-                        src="./images/5.jpg"
-                        alt="image-5"
-                        class="w-full h-full object-cover"
-                    />
-                    <div class="hero-content">
-                        <h1 class="header-h1">
-                            Cutting-edge technology solutions
-                        </h1>
-                        <p class="header-p">
-                            Stay ahead of the curve with our cutting-edge
-                            technology solutions for enhanced performance and
-                            productivity.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- links -->
                 <div
-                    class="flex justify-between md:justify-start md:gap-7 items-center text-pbase md:text-base absolute bottom-36 md:bottom-40 px-5 w-full md:ml-16"
-                >
-                    <a
-                        href="#"
-                        class="py-3 md:py-4 px-5 md:px-8 bg-gray-950 border border-gray-50 rounded-[35px] text-gray-50 text-lg font-semibold hover:shadow-xl"
-                        >Our services</a
-                    >
-                    <a
-                        href="#"
-                        class="py-3 md:py-4 px-5 md:px-8 bg-gray-100 rounded-[35px] text-grey-950 text-lg font-semibold hover:shadow-xl"
-                        >More about us</a
-                    >
-                </div>
-                <!-- links end -->
-
-                <div
-                    class="buttons absolute left-1/2 -translate-x-1/2 bottom-[10%] flex gap-4"
-                >
-                    <div
-                        class="btn w-[8px] h-[8px] rounded-full bg-gray-300 bg-opacity-70 activebtn"
-                    ></div>
-                    <div
-                        class="btn w-[8px] h-[8px] rounded-full bg-gray-300 bg-opacity-70"
-                    ></div>
-                    <div
-                        class="btn w-[8px] h-[8px] rounded-full bg-gray-300 bg-opacity-70"
-                    ></div>
-                    <div
-                        class="btn w-[8px] h-[8px] rounded-full bg-gray-300 bg-opacity-70"
-                    ></div>
-                    <div
-                        class="btn w-[8px] h-[8px] rounded-full bg-gray-300 bg-opacity-70"
-                    ></div>
-                </div>
-                <div
-                    class="sticky hidden lg:block max-w-[600px] mr-10 float-right top-[10vh] rounded-md bg-addressHero p-5"
+                    class="mt-10 lg:mt-0 max-w-[600px] md:mx-auto rounded-md bg-gray-950 px-2 py-3 md:p-5"
                 >
                     <div class="flex flex-col items-center md:block">
                         <p
@@ -304,40 +244,40 @@
                             Address
                         </p>
                         <div
-                            class="footer-links text-gray-400 text-center md:text-left flex flex-col items-center md:flex-row md:items-start"
+                            class="footer-links text-gray-400 lg:text-left flex flex-row items-start"
                         >
                             <i
                                 class="bx bx-current-location text-xl mr-3 mt-1 text-phosOrange"
                             ></i>
                             <div class="">
                                 <p
-                                    class="font-semibold text-base text-gray-200"
+                                    class="font-semibold text-sm lg:text-base text-gray-200"
                                     class=""
                                 >
                                     Head Office:
                                 </p>
                                 <span
-                                    class="hover:text-gray-100 hover:underline"
+                                    class="text-sm lg:text-base hover:text-gray-300"
                                     >16, Buckingham street, Portsmouth,
                                     UK.</span
                                 >
                             </div>
                         </div>
                         <div
-                            class="footer-links text-gray-400 text-center md:text-left flex flex-col items-center md:flex-row md:items-start"
+                            class="footer-links text-gray-400 lg:text-left flex flex-row items-start"
                         >
                             <i
                                 class="bx bx-current-location text-xl mr-3 mt-1 text-phosOrange"
                             ></i>
                             <div class="">
                                 <p
-                                    class="font-semibold text-base text-gray-200"
+                                    class="font-semibold text-sm lg:text-base text-gray-200"
                                     class=""
                                 >
                                     Branch Office:
                                 </p>
                                 <span
-                                    class="hover:text-gray-100 hover:underline"
+                                    class="text-sm lg:text-base hover:text-gray-300"
                                     >Top floor DSTV Buildiing, Liberty road, Off
                                     ring road Ibadan.</span
                                 >
@@ -348,6 +288,626 @@
             </div>
         </header>
         <!-- header section ends -->
+        <main class="mx-auto overflow-hidden max-w-7xl">
+            <div
+                class="mx-auto flex flex-col-reverse md:flex-row px-5 md:px-10"
+            >
+                <div
+                    class="pt-0 pb-10 md:py-20 md:max-w-[600px] md:mr-10"
+                    id="about-content-left"
+                >
+                    <h2
+                        class="text-black font-semibold text-xl md:text-2xl mb-5 md:max-w-2xl hidden md:block"
+                        data-aos="fade-right"
+                    >
+                        Phos consults and business services Ltd.
+                    </h2>
+                    <div
+                        class="text-sm text-gray-700 my-5 md:text-pbase space-y-4"
+                        data-aos="fade-right"
+                    >
+                        <p>
+                            Phos Consults, the undisputed leader in propelling
+                            businesses towards unparalleled success. We are your
+                            trusted partner, standing firm in our unwavering
+                            commitment to excellence. With an elite team of
+                            seasoned professionals, we dedicate ourselves to
+                            empowering enterprises through an all-encompassing
+                            suite of services that redefine success.
+                        </p>
+                        <p>
+                            Immerse yourself in our world of limitless
+                            possibilities as we unveil a comprehensive range of
+                            transformative solutions. From crafting visionary
+                            business strategies to conducting meticulous
+                            research and data collection, we leave no stone
+                            unturned. Our strategic planning is a symphony of
+                            brilliance, while flawless implementation becomes
+                            our hallmark.
+                        </p>
+                        <p>
+                            But it doesn't end there. Prepare to witness
+                            innovation at its finest as we unleash the full
+                            potential of your organization. Experience the
+                            cutting-edge wonders of our mobile app development,
+                            web development, data analysis, and unrivaled cyber
+                            security. We redefine the very essence of IT
+                            outsourcing.
+                        </p>
+                        <p>
+                            Join us on a journey that knows no bounds. Let us
+                            revolutionize every aspect of your operations and
+                            ignite exponential growth. Discover the
+                            transformative power of Phos Consults and unlock the
+                            true potential of your business. Embrace the
+                            extraordinary, for your success has no limits with
+                            us by your side.
+                        </p>
+                    </div>
+                    <ul
+                        class="font-semibold text-sm md:text-pbase"
+                        data-aos="fade-right"
+                    >
+                        <li class="flex items-center mb-2">
+                            <span class="material-symbols-outlined mr-3">
+                                check_circle
+                            </span>
+                            Best for business consulting
+                        </li>
+                        <li class="flex items-center mb-2">
+                            <span class="material-symbols-outlined mr-3">
+                                check_circle
+                            </span>
+                            We help plan your business
+                        </li>
+                        <li class="flex items-center mb-2">
+                            <span class="material-symbols-outlined mr-3">
+                                check_circle
+                            </span>
+                            Development of financial models
+                        </li>
+                        <li class="flex items-center mb-2">
+                            <span class="material-symbols-outlined mr-3">
+                                check_circle
+                            </span>
+                            Feasibility studies and business plan
+                        </li>
+                        <li class="flex items-center">
+                            <span class="material-symbols-outlined mr-3">
+                                check_circle
+                            </span>
+                            IT outsourcing
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="relative overflow-hidden md:mt-20"
+                    id="about-content-right"
+                    data-aos="fade-in"
+                >
+                    <h2
+                        class="text-black font-semibold text-center text-xl md:text-2xl md:max-w-2xl md:hidden"
+                    >
+                        Phos consults and business services Ltd.
+                    </h2>
+                    <p
+                        class="text-center text-gray-700 font-medium text-sm md:text-base mb-5 md:max-w-2xl mx-auto md:hidden"
+                        id="services-paragraph"
+                        data-aos="fade-up"
+                    >
+                        We are skilled in and we offer divers services and
+                        strategies that will surely give your business a big
+                        boost.
+                    </p>
+                    <div class="md:flex md:align-center w-full h-4/5">
+                        <img
+                            src="./images/about.jpg"
+                            alt=""
+                            class="w-full md:w-4/5 object-cover mx-auto rounded-lg"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!--=============== our vision / mission ===============-->
+            <div
+                id="accordion-color"
+                data-accordion="collapse"
+                data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white"
+                class="mt-5 px-5 md:px-10 md:grid md:grid-cols-2 w-full mx-auto"
+            >
+                <div class="">
+                    <h2 id="accordion-color-heading-1">
+                        <button
+                            type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                            data-accordion-target="#accordion-color-body-1"
+                            aria-expanded="true"
+                            aria-controls="accordion-color-body-1"
+                        >
+                            <span>Our vision</span>
+                            <svg
+                                data-accordion-icon
+                                class="w-6 h-6 rotate-180 shrink-0"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"
+                                ></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div
+                        id="accordion-color-body-1"
+                        class="hidden"
+                        aria-labelledby="accordion-color-heading-1"
+                    >
+                        <div
+                            class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+                        >
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                To create a world class initiative eith simple
+                                and low cost techniques that helps businesses
+                                build a solid structure and business growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <h2 id="accordion-color-heading-2">
+                        <button
+                            type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                            data-accordion-target="#accordion-color-body-2"
+                            aria-expanded="false"
+                            aria-controls="accordion-color-body-2"
+                        >
+                            <span>Our mission</span>
+                            <svg
+                                data-accordion-icon
+                                class="w-6 h-6 shrink-0"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"
+                                ></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div
+                        id="accordion-color-body-2"
+                        class="hidden"
+                        aria-labelledby="accordion-color-heading-2"
+                    >
+                        <ul
+                            class="p-5 border border-b-0 border-gray-200 dark:border-gray-700"
+                        >
+                            <li class="mb-2 text-gray-500 dark:text-gray-400">
+                                Creating a community and network of high flyers
+                                with a common goal of discoveries for delivering
+                                high value at effective costs.
+                            </li>
+                            <li class="text-gray-500 dark:text-gray-400">
+                                To build great institutions by developing the
+                                competence and capabilities of their team and
+                                designing great systems for them to work.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--=============== our vision / mission end ===============-->
+            <!--=============== team ===============-->
+            <div class="bg-black py-10 mt-10 md:mt-20">
+                <div class="mx-auto w-full max-w-5xl px-5 md:px-10">
+                    <h2
+                        class="text-center text-white font-semibold text-xl md:text-2xl mb-2 md:max-w-2xl mx-auto"
+                        id="members-heading"
+                        data-aos="fade-up"
+                    >
+                        Meet our Team
+                    </h2>
+                    <div class="">
+                        <p
+                            class="text-center text-gray-200 font-medium text-sm md:text-base mb-5 md:max-w-2xl mx-auto"
+                            data-aos="fade-up"
+                        >
+                            Our business experts have a wide range of knowledge
+                            in different fields.
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-wrap gap-10 md:grid md:grid-cols-3 w-full"
+                    >
+                        <div
+                            class="h-[350px] md:h-[400px] flex justify-center items-center w-full flex-col bg-black rounded-md"
+                            data-aos="fade-up"
+                        >
+                            <div
+                                class="h-[80%] relative w-[80%] md:w-full overflow-hidden"
+                            >
+                                <img
+                                    src="./images/team1.jpg"
+                                    alt="our team member"
+                                    class="w-full mx-auto rounded-md"
+                                />
+                                <div
+                                    class="absolute bottom-0 left-0 w-full h-[200px] border-b border-b-black bg-gradient-to-t from-black to-transparent"
+                                ></div>
+                            </div>
+                            <h3
+                                class="mt-2 font-semibold tracking-wide text-pbase text-white capitalize"
+                            >
+                                Enoch Durotoye
+                            </h3>
+                            <h5 class="text-gray-200 text-sm capitalize">
+                                Chairman
+                            </h5>
+                        </div>
+                        <div
+                            class="h-[350px] md:h-[400px] flex justify-center items-center w-full flex-col bg-black rounded-md"
+                            data-aos="fade-up"
+                        >
+                            <div
+                                class="h-[80%] relative w-[80%] md:w-full overflow-hidden"
+                            >
+                                <img
+                                    src="./images/team2.jpg"
+                                    alt="our team member"
+                                    class="w-full mx-auto rounded-md"
+                                />
+                                <div
+                                    class="absolute bottom-0 left-0 w-full h-[200px] border-b border-b-black bg-gradient-to-t from-black to-transparent"
+                                ></div>
+                            </div>
+                            <h3
+                                class="mt-2 font-semibold tracking-wide text-pbase text-white capitalize"
+                            >
+                                Tosin Godwin
+                            </h3>
+                            <h5 class="text-gray-200 text-sm capitalize">
+                                Business Analyst / project manager
+                            </h5>
+                        </div>
+                        <div
+                            class="h-[350px] md:h-[400px] flex justify-center items-center w-full flex-col bg-black rounded-md"
+                            data-aos="fade-up"
+                        >
+                            <div
+                                class="h-[80%] relative w-[80%] md:w-full overflow-hidden"
+                            >
+                                <img
+                                    src="./images/team3.jpg"
+                                    alt="our team member"
+                                    class="w-full mx-auto rounded-md"
+                                />
+                                <div
+                                    class="absolute bottom-0 left-0 w-full h-[200px] border-b border-b-black bg-gradient-to-t from-black to-transparent"
+                                ></div>
+                            </div>
+                            <h3
+                                class="mt-2 font-semibold tracking-wide text-pbase text-white capitalize"
+                            >
+                                Mr. victor
+                            </h3>
+                            <h5 class="text-gray-200 text-sm capitalize">
+                                Lead consultant
+                            </h5>
+                        </div>
+                        <div
+                            class="h-[350px] md:h-[400px] flex justify-center items-center w-full flex-col bg-black rounded-md"
+                            data-aos="fade-up"
+                        >
+                            <div
+                                class="h-[80%] relative w-[80%] md:w-full overflow-hidden"
+                            >
+                                <img
+                                    src="./images/team4.jpg"
+                                    alt="our team member"
+                                    class="w-full mx-auto rounded-md"
+                                />
+                                <div
+                                    class="absolute bottom-0 left-0 w-full h-[200px] border-b border-b-black bg-gradient-to-t from-black to-transparent"
+                                ></div>
+                            </div>
+                            <h3
+                                class="mt-2 font-semibold tracking-wide text-pbase text-white capitalize"
+                            >
+                                Ayodeji opeyemi afolayan
+                            </h3>
+                            <h5 class="text-gray-200 text-sm capitalize">
+                                senior coordinator
+                            </h5>
+                        </div>
+                        <div
+                            class="h-[350px] md:h-[400px] flex justify-center items-center w-full flex-col bg-black rounded-md"
+                            data-aos="fade-up"
+                        >
+                            <div
+                                class="h-[80%] relative w-[80%] md:w-full overflow-hidden"
+                            >
+                                <img
+                                    src="./images/team5.jpg"
+                                    alt="our team member"
+                                    class="w-full mx-auto rounded-md"
+                                />
+                                <div
+                                    class="absolute bottom-0 left-0 w-full h-[200px] border-b border-b-black bg-gradient-to-t from-black to-transparent"
+                                ></div>
+                            </div>
+                            <h3
+                                class="mt-2 font-semibold tracking-wide text-pbase text-white capitalize"
+                            >
+                                Engr. adedamola temitope
+                            </h3>
+                            <h5 class="text-gray-200 text-sm capitalize">
+                                partner, technology consulting
+                            </h5>
+                        </div>
+                        <div
+                            class="h-[350px] md:h-[400px] flex justify-center items-center w-full flex-col bg-black rounded-md"
+                            data-aos="fade-up"
+                        >
+                            <div
+                                class="h-[80%] relative w-[80%] md:w-full overflow-hidden"
+                            >
+                                <img
+                                    src="./images/team6.jpg"
+                                    alt="our team member"
+                                    class="w-4/5 mx-auto rounded-md"
+                                />
+                                <div
+                                    class="absolute bottom-0 left-0 w-full h-[200px] border-b border-b-black bg-gradient-to-t from-black to-transparent"
+                                ></div>
+                            </div>
+                            <h3
+                                class="mt-2 font-semibold tracking-wide text-pbase text-white capitalize"
+                            >
+                                otenaike titilayo
+                            </h3>
+                            <h5 class="text-gray-200 text-sm capitalize">
+                                research consultant
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=============== team end ===============-->
+            <!-- testimonial section  -->
+            <div class="relative pb-5 md:pb-10 mx-auto mt-10">
+                <div
+                    class="mx-auto max-w-6xl px-3 md:px-10 mySwiper overflow-hidden"
+                >
+                    <h2
+                        class="text-center text-gray-950 font-semibold text-xl md:text-2xl mb-2 md:max-w-2xl mx-auto"
+                        id="testimonial-heading"
+                        data-aos="fade-up"
+                    >
+                        What our clients have to say.
+                    </h2>
+                    <div class="">
+                        <p
+                            class="text-center text-gray-800 font-medium text-pbase md:text-base mb-5 md:max-w-2xl mx-auto"
+                            id="testimonial-paragraph"
+                            data-aos="fade-up"
+                        >
+                            View positive feedback from our clients on how Phos
+                            helped shed the light.
+                        </p>
+                    </div>
+
+                    <div class="swiper-wrapper">
+                        <article
+                            class="swiper-slide flex flex-col items-center"
+                        >
+                            <!-- <div class="testi-content"> -->
+                            <img
+                                src="./images/testi2.jpg"
+                                alt="first client"
+                                class="w-24 h-24 md:w-32 md:h-32 rounded-full"
+                            />
+                            <p
+                                class="text-sm md:text-base font-medium text-center mt-8 px-3 md:max-w-[90%] lg:max-w-full"
+                            >
+                                The professionalism and expertise of Phos
+                                Consults Limited exceeded our expectations. They
+                                not only helped us overcome complex challenges
+                                but also empowered our team with the necessary
+                                skills and tools for sustainable growth. They
+                                truly went above and beyond. We were struggling
+                                with strategic decision-making until we engaged
+                                Phos Consults. Their team provided invaluable
+                                insights and a fresh perspective that
+                                transformed our business. We couldn't be happier
+                                with the results.
+                            </p>
+                            <i
+                                class="bx bxs-quote-alt-left text-[35px] md:text-[55px] text-phosBlue mt-5 md:mt-8"
+                            ></i>
+                            <div class="mt-5 md:mt-10 text-center">
+                                <h4
+                                    class="font-bold text-pbase uppercase text-gray-950"
+                                >
+                                    Stalite Multinational Concept Limited.
+                                </h4>
+                                <h5
+                                    class="font-normal text-pbase capitalize text-gray-700"
+                                >
+                                    &nbsp;
+                                </h5>
+                            </div>
+                            <!-- </div> -->
+                        </article>
+                        <article
+                            class="swiper-slide flex flex-col items-center"
+                        >
+                            <!-- <div class="testi-content"> -->
+                            <img
+                                src="./images/testi4.jpg"
+                                alt="first client"
+                                class="w-24 h-24 md:w-32 md:h-32 rounded-full"
+                            />
+                            <p
+                                class="text-sm md:text-base font-medium text-center mt-8 px-3 md:max-w-[90%] lg:max-w-full"
+                            >
+                                Working with Phos Consults was an eye-opening
+                                experience. Their consultants chalenged our
+                                assumptions, identified untapped opportunities
+                                and guided us toward innovative solutions.
+                                Thanks to their expertise, we achieved
+                                breakthrough results and a competitve edge.
+                            </p>
+                            <i
+                                class="bx bxs-quote-alt-left text-[35px] md:text-[55px] text-phosBlue mt-5 md:mt-8"
+                            ></i>
+                            <div class="mt-5 md:mt-10 text-center">
+                                <h4
+                                    class="font-bold text-pbase uppercase text-gray-950"
+                                >
+                                    PFarms Limited
+                                </h4>
+                                <h5
+                                    class="font-normal text-pbase capitalize text-gray-700"
+                                >
+                                    &nbsp;
+                                </h5>
+                            </div>
+                            <!-- </div> -->
+                        </article>
+                        <article
+                            class="swiper-slide flex flex-col items-center"
+                        >
+                            <!-- <div class="testi-content"> -->
+                            <img
+                                src="./images/testi5.jpg"
+                                alt="first client"
+                                class="w-24 h-24 md:w-32 md:h-32 rounded-full"
+                            />
+                            <p
+                                class="text-sm md:text-base font-medium text-center mt-8 px-3 md:max-w-[90%] lg:max-w-full"
+                            >
+                                We engaged Phos Consults for a complex project
+                                and they deliverd exceptional results within the
+                                agreed timeline and budget. Their team's
+                                dedication, attention to detail and ability to
+                                navigate challenges were impressive. We would
+                                gladly collaborate with them again.
+                            </p>
+                            <i
+                                class="bx bxs-quote-alt-left text-[35px] md:text-[55px] text-phosBlue mt-5 md:mt-8"
+                            ></i>
+                            <div class="mt-5 md:mt-10 text-center">
+                                <h4
+                                    class="font-bold text-pbase uppercase text-gray-950"
+                                >
+                                    Gamble Alert
+                                </h4>
+                                <h5
+                                    class="font-normal text-pbase capitalize text-gray-700"
+                                >
+                                    Head of Corporate Communications
+                                </h5>
+                            </div>
+                            <!-- </div> -->
+                        </article>
+                        <article
+                            class="swiper-slide flex flex-col items-center"
+                        >
+                            <!-- <div class="testi-content"> -->
+                            <img
+                                src="./images/testi1.jpg"
+                                alt="first client"
+                                class="w-24 h-24 md:w-32 md:h-32 rounded-full"
+                            />
+                            <p
+                                class="text-sm md:text-base font-medium text-center mt-8 px-3 md:max-w-[90%] lg:max-w-full"
+                            >
+                                We couldn't be more pleased with the
+                                collaborative approach of Phos Consults. Their
+                                consultants became an integral part of our team,
+                                fostering a culture of continuous improvement
+                                and driving positive change. We are grateful for
+                                their dedication and coomitment to our Success.
+                                From start to finish, Phos Consults demonstrated
+                                professionalism, integrity and deep industry
+                                knowledge. Their comprehensive analysis and
+                                strategic
+                            </p>
+                            <i
+                                class="bx bxs-quote-alt-left text-[35px] md:text-[55px] text-phosBlue mt-5 md:mt-8"
+                            ></i>
+                            <div class="mt-5 md:mt-10 text-center">
+                                <h4
+                                    class="font-bold text-pbase uppercase text-gray-950"
+                                >
+                                    Femi
+                                </h4>
+                                <h5
+                                    class="font-normal text-pbase capitalize text-gray-700"
+                                >
+                                    Stemres
+                                </h5>
+                            </div>
+                            <!-- </div> -->
+                        </article>
+                        <article
+                            class="swiper-slide flex flex-col items-center"
+                        >
+                            <!-- <div class="testi-content"> -->
+                            <img
+                                src="./images/testi3.jpg"
+                                alt="first client"
+                                class="w-24 h-24 md:w-32 md:h-32 rounded-full"
+                            />
+                            <p
+                                class="text-sm md:text-base font-medium text-center mt-8 px-3 md:max-w-[90%] lg:max-w-full"
+                            >
+                                We were impressed by the personalised attention
+                                and tailored solutions offered by Phos Consults.
+                                Their team took the time to understand our
+                                unique needs and delivered exceptional
+                                strategies that yielded significant
+                                improvements. We highly recommend their
+                                services.
+                            </p>
+                            <i
+                                class="bx bxs-quote-alt-left text-[35px] md:text-[55px] text-phosBlue mt-5 md:mt-8"
+                            ></i>
+                            <div class="mt-5 md:mt-10 text-center">
+                                <h4
+                                    class="font-bold text-pbase uppercase text-gray-950"
+                                >
+                                    Raphael
+                                </h4>
+                                <h5
+                                    class="font-normal text-pbase capitalize text-gray-700"
+                                >
+                                    MLDC
+                                </h5>
+                            </div>
+                            <!-- </div> -->
+                        </article>
+                    </div>
+                    <div
+                        class="swiper-button-next nav-btn hidden md:block"
+                    ></div>
+                    <div
+                        class="swiper-button-prev nav-btn hidden md:block"
+                    ></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- testimonial section ends -->
+        </main>
+
         <!-- footer section starts -->
         <footer
             class="bg-gray-950 mx-auto py-10 md:pt-20 md:pb-7 md:clip-path-article"
@@ -365,13 +925,13 @@
                 </div>
                 <form class="w-[90%] md:w-auto mx-auto md:mx-0">
                     <label
-                        class="text-white text-sm md:text-pbase mb-2 md:mb-0"
+                        class="text-white text-sm lg:text-pbase mb-2 md:mb-0"
                         for="newsletter"
                     >
                         Join us today, let us help you grow your business.
                     </label>
                     <div
-                        class="flex flex-row justify-start md:justify-normal w-full md:w-[600px] bg-white rounded-md items-start overflow-hidden h-9 md:h-10"
+                        class="flex flex-row justify-start md:justify-normal w-full md:w-[350px] lg:w-[600px] bg-white rounded-md items-start overflow-hidden h-9 md:h-10"
                     >
                         <input
                             type="text"
@@ -391,7 +951,7 @@
                 </form>
             </div>
             <div
-                class="mx-auto max-w-[1500px] px-3 md:px-10 flex flex-col md:flex-row justify-between space-y-12 md:space-y-0"
+                class="mx-auto max-w-[1500px] px-3 md:px-10 flex flex-col md:grid md:grid-cols-3 lg:flex lg:flex-row justify-between space-y-12 md:space-y-0 md:gap-y-5 lg:gap-y-0 md:space-x-10"
             >
                 <div class="flex flex-col items-center md:block">
                     <p
@@ -402,7 +962,7 @@
                     <ul class="text-center md:text-left">
                         <li class="w-full md:w-auto text-gray-400">
                             <a
-                                href="#"
+                                href="tel:+234-705-138-1049"
                                 class="footer-links hover:text-gray-50 transition-all duration-150"
                             >
                                 <i class="bx bx-phone text-xl mr-3 mt-1"></i>
@@ -414,7 +974,7 @@
                         </li>
                         <li class="w-full md:w-auto text-gray-400">
                             <a
-                                href="#"
+                                href="mailto:info@phosconsults.com"
                                 class="footer-links hover:text-gray-50 transition-all duration-150"
                             >
                                 <i class="bx bx-envelope text-xl mr-3 mt-1"></i>
@@ -605,7 +1165,7 @@
                         Social media
                     </p>
                     <div
-                        class="flex gap-3 items-center justify-center text-gray-50 mt-3"
+                        class="flex gap-3 items-center justify-center md:justify-start text-gray-50 mt-3"
                     >
                         <span>
                             <a
@@ -654,6 +1214,16 @@
             </p>
         </footer>
         <!-- footer section ends -->
+        <!-- scroll to top -->
+        <div class="scroll-smooth bg-transparent">
+            <a
+                class="rounded-full w-10 h-10 md:w-14 md:h-14 z-[1000] bg-phosOrange text-white fixed right-[10vw] md:right-[15vw] bottom-[10vh] md:bottom-[15vh] flex items-center justify-center transition-all duration-300"
+                href="#header"
+            >
+                <i class="bx bx-chevrons-up text-white text-xl md:text-3xl"></i>
+            </a>
+        </div>
+        <!-- scroll to top ends -->
 
         <script src="node_modules/aos/dist/aos.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -666,10 +1236,6 @@
                 once: true,
             });
         </script>
-        <!-- swiper js -->
-        <script src="./js/swiper-bundle.min.js" defer></script>
-
-        <script type="module" src="./js/app.js" defer></script>
     </body>
 </html>
 

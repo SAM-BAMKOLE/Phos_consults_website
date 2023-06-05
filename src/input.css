@@ -99,11 +99,20 @@
     .hero-content {
         @apply mx-5 md:mx-0 absolute top-32 md:top-36 md:left-20 md:max-w-[600px];
     }
+    .hero2-content {
+        @apply lg:max-w-[600px];
+    }
     .header-h1 {
         @apply tracking-wider text-white font-semibold md:font-bold text-[38px] md:text-[50px]  leading-[1] capitalize;
     }
+    .header2-h1 {
+        @apply tracking-wider bg-gradient-to-br from-phosBlue to-gray-950 bg-clip-text text-transparent font-extrabold md:font-black text-[38px] md:text-[50px]  leading-[1] capitalize;
+    }
+    .header2-p {
+        @apply text-gray-800 text-pbase md:text-xl mt-2 font-semibold;
+    }
     .header-p {
-        @apply text-white rounded-md bg-opacity-10 text-pbase md:text-xl mt-2 font-medium;
+        @apply text-white bg-opacity-10 text-pbase md:text-xl mt-2 font-medium;
     }
     .overview {
         @apply rounded-md bg-gray-900 border border-gray-300 p-2 hover:bg-gray-700 px-7 transition duration-[300];
