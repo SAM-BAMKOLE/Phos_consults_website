@@ -203,7 +203,7 @@
         <!-- header section starts -->
         <header
             class="w-full md:h-[75vh] md:max-h-[500px] py-14 overflow-hidden bg-pattern mt-[75px]"
-            id="header"
+            id="head"
         >
             <div
                 class="w-full h-full relative flex flex-col lg:flex-row lg:items-center lg:justify-between max-w-6xl mx-auto px-5 lg:px-0"
@@ -293,7 +293,7 @@
                 class="mx-auto flex flex-col-reverse md:flex-row px-5 md:px-10"
             >
                 <div
-                    class="pt-0 pb-10 md:py-20 md:max-w-[600px] md:mr-10"
+                    class="pt-0 pb-10 md:py-20 md:max-w-[400px] lg:max-w-[600px] md:mr-10"
                     id="about-content-left"
                 >
                     <h2
@@ -408,7 +408,117 @@
                     </div>
                 </div>
             </div>
-
+            <div class="flex w-full lg:flex-row flex-col">
+                <div class="w-full mx-auto px-5 md:px-10 mb-10">
+                    <img
+                        src="./images/Strategy-Phos.jpg"
+                        alt="strategy session with Gamle Alert"
+                        class="w-full rounded"
+                    />
+                    <p
+                        class="text-pbase text-gray-800 text-center mt-1 md:mt-2"
+                    >
+                        A strategy session with Gamble Alert
+                    </p>
+                </div>
+                <div class="px-5 md:px-10 mb-10">
+                    <h2
+                        class="text-black font-bold text-xl md:text-2xl text-center md:max-w-2xl mb-3"
+                    >
+                        Our Core Values
+                    </h2>
+                    <p class="text-pbase md:text-base text-gray-800">
+                        It’s no secret that at PHOS Consults, we are guided by
+                        our core values. We incorporate discussion about these
+                        core values in each team meeting. The values we hold in
+                        high esteem amongst others are our ACRONYM PHOS.
+                    </p>
+                    <ul
+                        class="grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] mt-3 gap-5"
+                    >
+                        <li>
+                            <h3
+                                class="font-bold text-[18px] md:text-xl tracking-wide flex justify-start space-x-5 items-center"
+                            >
+                                <span
+                                    class="w-10 h-[6px] rounded bg-phosOrange"
+                                ></span>
+                                <span class="text-phosBlue ml-3"
+                                    >Professionalism</span
+                                >
+                                <span
+                                    class="w-10 h-[6px] rounded bg-phosOrange"
+                                ></span>
+                            </h3>
+                            <p>
+                                As a team, we have a collection of standards put
+                                together that drives us to deliver quality jobs
+                                professionally.
+                            </p>
+                        </li>
+                        <li>
+                            <h3
+                                class="font-bold text-[18px] md:text-xl tracking-wide flex justify-start space-x-5 items-center"
+                            >
+                                <span
+                                    class="w-10 h-[6px] rounded bg-phosOrange"
+                                ></span>
+                                <span class="text-phosBlue ml-3"
+                                    >Human & Honest</span
+                                >
+                                <span
+                                    class="w-10 h-[6px] rounded bg-phosOrange"
+                                ></span>
+                            </h3>
+                            <p>
+                                We deeply value our humanity, which inspires us
+                                to be real with one another and accepting our
+                                differences.
+                            </p>
+                        </li>
+                        <li>
+                            <h3
+                                class="font-bold text-[18px] md:text-xl tracking-wide flex justify-start space-x-5 items-center"
+                            >
+                                <span
+                                    class="w-10 h-[6px] rounded bg-phosOrange"
+                                ></span>
+                                <span class="text-phosBlue ml-3"
+                                    >Originality</span
+                                >
+                                <span
+                                    class="w-10 h-[6px] rounded bg-phosOrange"
+                                ></span>
+                            </h3>
+                            <p>
+                                Every task or conversation and learning
+                                opportunity is met with open mind of innovation
+                                and creativity.
+                            </p>
+                        </li>
+                        <li>
+                            <h3
+                                class="font-bold text-[18px] md:text-xl tracking-wide flex justify-start space-x-5 items-center"
+                            >
+                                <span
+                                    class="w-10 h-[6px] rounded bg-phosOrange"
+                                ></span>
+                                <span class="text-phosBlue ml-3"
+                                    >Simplicity</span
+                                >
+                                <span
+                                    class="w-10 h-[6px] rounded bg-phosOrange"
+                                ></span>
+                            </h3>
+                            <p>
+                                Our solutions are simple enough to implement for
+                                efficiency and clarity, which is easier to
+                                understand.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <!--=============== our vision / mission ===============-->
             <div
                 id="accordion-color"
@@ -417,10 +527,10 @@
                 class="mt-5 px-5 md:px-10 md:grid md:grid-cols-2 w-full mx-auto"
             >
                 <div class="">
-                    <h2 id="accordion-color-heading-1">
+                    <h2 id="accordion-heading-1">
                         <button
                             type="button"
-                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 hover:bg-gray-200 rounded"
                             data-accordion-target="#accordion-color-body-1"
                             aria-expanded="true"
                             aria-controls="accordion-color-body-1"
@@ -442,9 +552,9 @@
                         </button>
                     </h2>
                     <div
-                        id="accordion-color-body-1"
+                        id="accordion-body-1"
                         class="hidden"
-                        aria-labelledby="accordion-color-heading-1"
+                        aria-labelledby="accordion-heading-1"
                     >
                         <div
                             class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
@@ -458,10 +568,10 @@
                     </div>
                 </div>
                 <div class="">
-                    <h2 id="accordion-color-heading-2">
+                    <h2 id="accordion-heading-2">
                         <button
                             type="button"
-                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 hover:bg-gray-200 rounded"
                             data-accordion-target="#accordion-color-body-2"
                             aria-expanded="false"
                             aria-controls="accordion-color-body-2"
@@ -483,9 +593,9 @@
                         </button>
                     </h2>
                     <div
-                        id="accordion-color-body-2"
+                        id="accordion-body-2"
                         class="hidden"
-                        aria-labelledby="accordion-color-heading-2"
+                        aria-labelledby="accordion-heading-2"
                     >
                         <ul
                             class="p-5 border border-b-0 border-gray-200 dark:border-gray-700"
@@ -505,6 +615,27 @@
                 </div>
             </div>
             <!--=============== our vision / mission end ===============-->
+            <!-- quote section -->
+            <section class="">
+                <div
+                    class="px-3 md:px-10 mx-auto flex flex-col items-center justify-between gap-7 md:gap-10 py-14"
+                >
+                    <p
+                        class="text-gray-900 text-pbase md:text-xl font-semibold"
+                    >
+                        Are you looking for professional advice for your
+                        business or your industry?
+                    </p>
+                    <div class="">
+                        <a
+                            href="#"
+                            class="py-3 px-6 bg-phosBlue rounded-3xl text-gray-50 text-pbase font-semibold hover:shadow-xl"
+                            >Get a free quote</a
+                        >
+                    </div>
+                </div>
+            </section>
+            <!-- quote section ends -->
             <!--=============== team ===============-->
             <div class="bg-black py-10 mt-10 md:mt-20">
                 <div class="mx-auto w-full max-w-5xl px-5 md:px-10">
@@ -906,6 +1037,29 @@
                 </div>
             </div>
             <!-- testimonial section ends -->
+            <!-- =================Quotes section ================ -->
+            <!-- quote section -->
+            <section class="">
+                <div
+                    class="px-3 md:px-10 mx-auto flex flex-col items-center justify-between gap-7 md:gap-10 py-14"
+                >
+                    <p
+                        class="text-gray-900 text-pbase md:text-xl font-semibold"
+                    >
+                        Are you looking for professional advice for your
+                        business or your industry?
+                    </p>
+                    <div class="">
+                        <a
+                            href="#"
+                            class="py-3 px-6 bg-phosBlue rounded-3xl text-gray-50 text-pbase font-semibold hover:shadow-xl"
+                            >Get a free quote</a
+                        >
+                    </div>
+                </div>
+            </section>
+            <!-- quote section ends -->
+            <!-- =================Quotes section ================ -->
         </main>
 
         <!-- footer section starts -->
@@ -1218,7 +1372,7 @@
         <div class="scroll-smooth bg-transparent">
             <a
                 class="rounded-full w-10 h-10 md:w-14 md:h-14 z-[1000] bg-phosOrange text-white fixed right-[10vw] md:right-[15vw] bottom-[10vh] md:bottom-[15vh] flex items-center justify-center transition-all duration-300"
-                href="#header"
+                href="#head"
             >
                 <i class="bx bx-chevrons-up text-white text-xl md:text-3xl"></i>
             </a>

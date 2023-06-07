@@ -33,7 +33,9 @@ document.addEventListener("DOMContentLoaded", setNavOnload);
 const navDesktop = document.getElementById("nav-desktop");
 
 document.addEventListener("DOMContentLoaded", (e) => {
-    navDesktop.classList.remove("opacity-0");
+    if (navDesktop) {
+        navDesktop.classList.remove("opacity-0");
+    }
 });
 
 // navbar for mobile
@@ -83,8 +85,9 @@ const navScrollObserver = new IntersectionObserver(
     navScrollCallback,
     navScrollOptions
 );
-navScrollObserver.observe(header);
-
+if (header) {
+    navScrollObserver.observe(header);
+}
 // navbar
 
 // testimonial slider section
@@ -170,3 +173,34 @@ const currDate = new Date();
 const currentYear = currDate.getFullYear();
 
 copyYear.textContent = currentYear;
+
+// ================== about section ====================
+// =================== vision / mission accordion =================
+const accordion1Button = document.getElementById("accordion-heading-1");
+const accordion2Button = document.getElementById("accordion-heading-2");
+const accordion1Text = document.getElementById("accordion-body-1");
+const accordion2Text = document.getElementById("accordion-body-2");
+
+// const accordionState = (param) => {
+//     param.classList.toggle("hidden");
+// };
+if (accordion1Button) {
+    accordion1Button.addEventListener("click", () => {
+        accordion1Text.classList.toggle("hidden");
+        if (accordion1Text.classList.contains("hidden")) {
+            accordion1Button.classList.add("bg-gray-50");
+        } else {
+            accordion1Button.classList.add("bg-gray-200");
+        }
+    });
+}
+if (accordion2Button) {
+    accordion2Button.addEventListener("click", () => {
+        accordion2Text.classList.toggle("hidden");
+        if (accordion2Text.classList.contains("hidden")) {
+            accordion2Button.classList.add("bg-gray-50");
+        } else {
+            accordion1Button.classList.add("bg-gray-200");
+        }
+    });
+}

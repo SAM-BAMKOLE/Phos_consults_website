@@ -4,6 +4,7 @@ module.exports = {
         "./pages/**/*.html",
         "./about.html",
         "./index.html",
+        "./js/app.js",
         "./node_modules/flowbite/**/*.js",
     ],
     theme: {
@@ -30,7 +31,7 @@ module.exports = {
                 addressHero:
                     " linear-gradient(rgba(0, 0, 0, 0.75), rgba(3, 7, 18, 0.75))",
                 pattern:
-                    " linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 1)), url('/images/pattern-2.jpg')",
+                    " linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)), url('/images/pattern-2.jpg')",
             },
             fontFamily: {
                 raleway: [' "Raleway", sans-serif; '],
