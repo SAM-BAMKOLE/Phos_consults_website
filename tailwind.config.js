@@ -1,9 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
-        "./pages/**/*.html",
-        "./about.html",
         "./index.html",
+        "./pages/**/*.html",
         "./js/app.js",
         "./node_modules/flowbite/**/*.js",
     ],
@@ -39,6 +38,8 @@ module.exports = {
             colors: {
                 phosOrange: "#ffa600",
                 phosBlue: "#09067c",
+                phosBlue2: "#04025a",
+                // phosBlue2: "#000435",
             },
         },
         fontSize: {
