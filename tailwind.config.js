@@ -26,7 +26,7 @@ module.exports = {
         extend: {
             backgroundImage: {
                 testimonial:
-                    " linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url('/images/testimonial-background.jpg')",
+                    " linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/testimonial-background.jpg')",
                 addressHero:
                     " linear-gradient(rgba(0, 0, 0, 0.75), rgba(3, 7, 18, 0.75))",
                 pattern:

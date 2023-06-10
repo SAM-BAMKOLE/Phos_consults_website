@@ -27,7 +27,7 @@
         clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
     }
     .clip-path-article-sm {
-        clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
     }
     .displayed {
         opacity: 1;
@@ -109,6 +109,9 @@
     .header2-h1 {
         @apply tracking-wider bg-gradient-to-br from-phosBlue to-gray-950 bg-clip-text text-transparent font-extrabold md:font-black text-[38px] md:text-[50px]  leading-[1] capitalize;
     }
+    .header3-h1 {
+        @apply tracking-wider bg-gradient-to-br from-phosBlue to-gray-950 bg-clip-text text-transparent text-center font-bold md:font-black text-[30px] md:text-[40px]  leading-[1] capitalize;
+    }
     .header2-p {
         @apply text-gray-800 text-pbase md:text-xl mt-2 font-semibold;
     }
@@ -116,12 +119,18 @@
         @apply text-white bg-opacity-10 text-pbase md:text-xl mt-2 font-medium;
     }
     .overview {
-        @apply rounded-md bg-phosBlue2 border border-gray-300 p-2 hover:bg-gray-700 px-7 transition duration-[300];
+        @apply rounded-md bg-phosBlue2 border border-gray-300 p-2 hover:bg-phosBlue px-7 transition duration-[300];
     }
     .footer-links {
         @apply flex w-full md:w-auto py-2 text-pbase md:text-base items-start capitalize;
     }
     .footer-links2 {
         @apply w-full md:w-auto text-pbase md:text-base items-start capitalize;
+    }
+    .aside-li {
+        @apply w-full;
+    }
+    .aside {
+        @apply flex w-60 py-3 bg-gray-100 px-5 hover:bg-gray-50 text-gray-500 font-semibold text-pbase;
     }
 }
